@@ -14,7 +14,8 @@
         <!-- Logo -->
         <div class="text-white font-bold text-2xl ">
             <!-- <img src="/src/assets/pc/logo.jpg" class="w-24 h-12" alt=""> -->
-          PCBS<span class="text-violet-400">BD</span>
+             <a @click="scrollToSection('home')">PCBS<span class="text-violet-400">BD</span></a>
+          
         </div>
 
         <!-- Desktop Menu -->
