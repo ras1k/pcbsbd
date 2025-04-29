@@ -21,7 +21,7 @@
             <li>Innovative solutions to meet every type of need, from gaming to workstations</li>
           </ul>
         </div>
-        <div class="group bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl border border-gray-200">
+        <div data-aos="zoom-in" class="group bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl border border-gray-200">
           <img 
             src="/src/assets/pc/cover.jpg" 
             alt="Our Values" 
@@ -32,7 +32,7 @@
 
       <!-- Unique Offerings Section -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        <div data-aos="zoom-in" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+        <div data-aos="fade-right" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
           <div class="text-violet-700 text-5xl mb-6 transition-transform duration-500 hover:rotate-12">
             <i class="fas fa-cogs"></i>
           </div>
@@ -42,7 +42,7 @@
           </p>
         </div>
 
-        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+        <div data-aos="zoom-out" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
           <div class="text-violet-700 text-5xl mb-6 transition-transform duration-500 hover:rotate-12">
             <i class="fas fa-shield-alt"></i>
           </div>
@@ -52,7 +52,7 @@
           </p>
         </div>
 
-        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+        <div data-aos="fade-left" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
           <div class="text-violet-700 text-5xl mb-6 transition-transform duration-500 hover:rotate-12">
             <i class="fas fa-headset"></i>
           </div>
@@ -64,7 +64,7 @@
       </div>
 
       <!-- Call to Action Section -->
-      <div class="text-center py-16 bg-gradient-to-r from-violet-700 to-violet-900 text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl">
+      <div data-aos="zoom-in" class="text-center py-16 bg-gradient-to-r from-violet-700 to-violet-900 text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl">
         <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Ready to Build Your Perfect PC?</h3>
         <p class="text-lg mb-8">Let PCBSBD help you create the best PC build for your needs. Get in touch with us today!</p>
         <router-link to="/contact"
