@@ -16,12 +16,12 @@
           Customized builds, unbeatable value setups, and expert laptop advice — all under one roof.
         </p>
         <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-          <a @click="scrollToSection('builds')" class="px-8 py-4 cursor-pointer bg-white text-[#4B0082] font-semibold rounded-full hover:bg-violet-300 hover:text-white transition duration-300">
+          <router-link to="/builds" class="px-8 py-4 cursor-pointer bg-white text-[#4B0082] font-semibold rounded-full hover:bg-violet-300 hover:text-white transition duration-300">
             View Builds
-          </a>
-          <a @click="scrollToSection('contact')" class="px-8 py-4 cursor-pointer border-2 border-white text-white rounded-full hover:bg-white hover:text-[#4B0082] transition duration-300">
+          </router-link>
+          <router-link to="/contact" class="px-8 py-4 cursor-pointer border-2 border-white text-white rounded-full hover:bg-white hover:text-[#4B0082] transition duration-300">
             Contact Us
-          </a>
+          </router-link>
         </div>
       </div>
 
