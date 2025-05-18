@@ -12,7 +12,7 @@
       <div class="flex flex-wrap justify-center gap-6">
         <a href="/" class="text-sm hover:text-white transition">Home</a>
         <a href="/about" class="text-sm hover:text-white transition">About Us</a>
-        <a href="/services" class="text-sm hover:text-white transition">Services</a>
+        <a href="/services" class="text-sm hover:text-white transition">Builds</a>
         <a href="/contact" class="text-sm hover:text-white transition">Contact</a>
       </div>
 
