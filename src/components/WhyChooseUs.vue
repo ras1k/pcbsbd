@@ -46,7 +46,7 @@
           <div class="text-violet-700 text-5xl mb-6 transition-transform duration-500 hover:rotate-12">
             <i class="fas fa-shield-alt"></i>
           </div>
-          <h4 class="text-2xl font-semibold text-violet-800 mb-4">Reliable & Secure</h4>
+          <h4 class="text-2xl font-semibold text-violet-800 mb-4">Reliable &amp; Secure</h4>
           <p class="text-gray-700">
             With top-tier components and secure, reliable builds, your system is guaranteed to perform at its best.
           </p>
@@ -64,7 +64,8 @@
       </div>
 
       <!-- Call to Action Section -->
-      <div class="text-center py-16 bg-gradient-to-r from-violet-700 to-violet-900 text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl">
+      <div class="parallax relative flex items-center justify-center">
+        <div class="text-center py-16 bg-black to-violet-900 bg-opacity-50 w-[85%] text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl">
         <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Ready to Build Your Perfect PC?</h3>
         <p class="text-lg mb-8">Let PCBSBD help you create the best PC build for your needs. Get in touch with us today!</p>
         <a 
@@ -73,6 +74,7 @@
         >
           Contact Us Now
         </a>
+      </div>
       </div>
     </div>
   </section>
@@ -83,5 +85,16 @@
 </script>
 
 <style scoped>
-/* No custom CSS needed as Tailwind is enough */
+.parallax {
+  background-image: url("/src/assets/pc/pc-3.jpg");
+
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
 </style>
