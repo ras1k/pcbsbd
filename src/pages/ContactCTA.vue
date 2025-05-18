@@ -8,7 +8,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         
         <!-- Contact Form -->
-        <div class="bg-white shadow-lg rounded-lg p-8 border border-gray-200" data-aos="fade-right" data-aos-duration="1500">
+        <div class="bg-gray-50 shadow-lg rounded-lg p-8 border border-gray-200" data-aos="fade-right" data-aos-duration="1500">
           <h3 class="text-2xl font-semibold text-violet-800 mb-6">Get in Touch</h3>
           
           <form @submit.prevent="submitForm" action="" method="POST" > 
@@ -52,7 +52,7 @@
         </div>
         
         <!-- Contact Info -->
-        <div class="bg-white shadow-lg rounded-lg p-8 border border-gray-200" data-aos="fade-left" data-aos-duration="1500">
+        <div class="bg-gray-50 shadow-lg rounded-lg p-8 border border-gray-200" data-aos="fade-left" data-aos-duration="1500">
           <div class="absolute inset-0 z-0">
             <canvas id="particles" class="w-full h-full"></canvas>
           </div>
