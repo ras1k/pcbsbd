@@ -129,8 +129,8 @@ onUnmounted(() => {
 <style scoped>
 
 .router-link-active {
-  color: white;
-  border-bottom: 2px solid #8b5cf6;
+  color: #8b5cf6;
+  border-bottom: 2px solid white;
   padding: 4px 8px;
   border-radius: 8px;
 }
