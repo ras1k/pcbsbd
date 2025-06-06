@@ -101,6 +101,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import emailjs from '@emailjs/browser'
+import { useToast } from "vue-toast-notification";
+const toast = useToast()
 
 const formData = ref({
   name: '',
@@ -112,16 +115,36 @@ const isSubmitting = ref(false)
 
 const submitForm = async () => {
   isSubmitting.value = true
-  // Simulate sending form data
-  await new Promise(resolve => setTimeout(resolve, 2000))
-  
-  // Reset the form after submission
-  formData.value = { name: '', email: '', message: '' }
-  isSubmitting.value = false
-  alert('Message sent successfully!')
+
+  const templateParams = {
+    from_name: formData.value.name,
+    from_email: formData.value.email,
+    message: formData.value.message,
+  }
+
+  try {
+    await emailjs.send(
+      'YOUR_SERVICE_ID',
+      'YOUR_TEMPLATE_ID',
+      templateParams,
+      'YOUR_PUBLIC_KEY'
+    )
+
+    toast.success('Message sent successfully!')
+    formData.value = { name: '', email: '', message: '' }
+  } catch (error) {
+    console.error('EmailJS error:', error)
+    toast.error('Failed to send message. Please try again.')
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>
+
 
 <style scoped>
 /* Optional: Style the map iframe and other elements */
 </style>
+
+
+

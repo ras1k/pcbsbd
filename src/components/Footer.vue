@@ -1,43 +1,88 @@
 <template>
-  <footer class="bg-violet-700 text-white py-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-      
-      <!-- Company Info -->
-      <div class="text-center md:text-left">
-        <h3 class="text-2xl font-bold mb-2">PCBSBD</h3>
-        <p class="text-sm text-gray-300">Building PCs with passion and precision.</p>
+  <footer class="bg-violet-950 text-white px-6 sm:px-10 lg:px-20">
+    <div class="max-w-7xl mx-auto w-full">
+      <!-- Top Nav Row -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center gap-4 px-0 py-6 border-b border-violet-800"
+      >
+        <nav
+          class="flex flex-wrap justify-center md:justify-start space-x-4 text-sm sm:text-base font-semibold"
+        >
+          <router-link to="/" class="hover:text-violet-400 transition">Home</router-link>
+          <router-link to="/about" class="hover:text-violet-400 transition">About</router-link>
+          <router-link to="/contact" class="hover:text-violet-400 transition">Contact Us</router-link>
+        </nav>
+        <img
+          src="@/assets/pc/cover-2.jpg"
+          alt="Logo"
+          class="h-14 sm:h-20 object-contain"
+        />
+        <nav
+          class="flex flex-wrap justify-center md:justify-end space-x-4 text-sm sm:text-base font-semibold"
+        >
+          <router-link to="/whyUs" class="hover:text-violet-400 transition">Why Us</router-link>
+          <router-link to="/builds" class="hover:text-violet-400 transition">Builds</router-link>
+          <router-link to="/team" class="hover:text-violet-400 transition">Our Team</router-link>
+        </nav>
       </div>
 
-      <!-- Footer Navigation -->
-      <div class="flex flex-wrap justify-center gap-6">
-        <a href="/" class="text-sm hover:text-white transition">Home</a>
-        <a href="/about" class="text-sm hover:text-white transition">About Us</a>
-        <a href="/services" class="text-sm hover:text-white transition">Builds</a>
-        <a href="/contact" class="text-sm hover:text-white transition">Contact</a>
+      <!-- Main Footer Grid -->
+      <div
+        class="py-10 flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-8 w-full"
+      >
+        <!-- Left: Company Info -->
+        <div class="w-full lg:w-1/3 text-center lg:text-left">
+          <h3 class="text-xl font-bold mb-2">Build Your Dream PC</h3>
+          <p class="text-sm text-gray-300 mb-4">
+            Building PCs with passion and precision.
+          </p>
+          <div class="flex justify-center lg:justify-start space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Center: Newsletter -->
+        <div class="w-full lg:w-1/3 text-center">
+          <p class="mb-2 text-sm">Join our newsletter for new updates</p>
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full p-2 rounded-t-md text-black focus:outline-none"
+          />
+          <button
+            class="w-full bg-violet-500 hover:bg-violet-600 text-white font-semibold py-2 rounded-b-md"
+          >
+            SUBSCRIBE
+          </button>
+        </div>
+
+        <!-- Right: Gallery -->
+        <div
+          class="w-full lg:w-1/3 flex flex-col items-center lg:items-center text-center"
+        >
+          <h3 class="text-xl font-bold flex items-center justify-center mb-3">
+            Gallery
+          </h3>
+          <div class="flex flex-wrap justify-center lg:justify-end gap-1">
+            <div
+              v-for="i in 12"
+              :key="i"
+              class="w-14 h-14 bg-white rounded"
+            ></div>
+          </div>
+        </div>
       </div>
-
-      <!-- Social Links -->
-      <div class="flex space-x-5">
-        <a href="https://www.facebook.com/profile.php?id=61570132933190" target="_blank" class="text-gray-300 hover:text-white text-2xl transition">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/pcbsbd?igsh=MTRjZ2Q2dzh1b2lhcg==" target="_blank" class="text-gray-300 hover:text-white text-2xl transition">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#" class="text-gray-300 hover:text-white text-2xl transition">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </div>
-
-    </div>
-
-    <!-- Bottom Copy -->
-    <div class="mt-8 text-center text-gray-400 text-xs">
-      © 2025 PCBSBD. All rights reserved.
     </div>
   </footer>
 </template>
-
-<script setup>
-// No script needed
-</script>
