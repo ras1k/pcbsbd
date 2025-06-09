@@ -18,23 +18,21 @@
         <!-- <span class="text-white">{{ route.name }}</span> -->
         <!-- Logo -->
         <div class="text-white font-bold text-2xl cursor-pointer">
-           <!-- <div @click="scrollToSection('home')" class="flex items bg-white p-1 rounded">
-             <img src="/src/assets/pc/logo.jpg" class="w-24 h-12 rounded" alt="">
-           </div> -->
+            <!-- <img src="/src/assets/pc/logo.jpg" class="w-24 h-12" alt=""> -->
              <a @click="scrollToSection('home')">PCBS<span class="text-violet-400">BD</span></a>
           
         </div>
 
-        <!-- Desktop Menu -->
-        <ul class="hidden md:flex items-center space-x-8 text-white font-medium">
-          <li><router-link to="/" @click="scrollToSection('home')" class="hover:text-violet-300 transition cursor-pointer">Home</router-link></li>
-          <li><router-link to="/about" class="hover:text-violet-300 transition cursor-pointer">About</router-link></li>
-          <li><router-link to="/builds" @click="scrollToSection('builds')" class="hover:text-violet-300 transition cursor-pointer">Builds</router-link></li>
-          <li><router-link to="/whyUs" @click="scrollToSection('whyus')" class="hover:text-violet-300 transition cursor-pointer">Why Us</router-link></li>
-          <li><router-link to="/team" @click="scrollToSection('team')" class="hover:text-violet-300 transition cursor-pointer">Our Team</router-link></li>
-          <li><router-link to="/contact" @click="scrollToSection('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
-          <li><router-link to="/blogs" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
-        </ul>
+       <!-- Desktop Menu -->
+<ul class="hidden md:flex items-center space-x-8 text-white font-medium">
+  <li><router-link to="/">Home</router-link></li>
+  <li><router-link to="/about">About</router-link></li>
+  <li><router-link to="/builds">Builds</router-link></li>
+  <li><router-link to="/whyUs">Why Us</router-link></li>
+  <li><router-link to="/team">Our Team</router-link></li>
+  <li><router-link to="/contact">Contact</router-link></li>
+  <li><router-link to="/blogs">Blogs</router-link></li>
+</ul>
 
         <!-- Mobile Hamburger -->
         <div class="md:hidden flex items-center">
@@ -49,18 +47,18 @@
         </div>
       </div>
 
-      <!-- Mobile Menu -->
-      <div v-if="isOpen" class="md:hidden bg-[#1a0b2e] px-6 py-4">
-        <ul class="flex flex-col space-y-4 text-white font-medium">
-          <li><router-link to="/" @click="scrollToSection('home')" class="hover:text-violet-300 transition cursor-pointer">Home</router-link></li>
-          <li><router-link to="/about" class="hover:text-violet-300 transition cursor-pointer">About</router-link></li>
-          <li><router-link to="/builds" @click="scrollToSection('builds')" class="hover:text-violet-300 transition cursor-pointer">Builds</router-link></li>
-          <li><router-link to="/whyUs" @click="scrollToSection('whyus')" class="hover:text-violet-300 transition cursor-pointer">Why Us</router-link></li>
-          <li><router-link to="/team" @click="scrollToSection('team')" class="hover:text-violet-300 transition cursor-pointer">Our Team</router-link></li>
-          <li><router-link to="/contact" @click="scrollToSection('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
-          <li><router-link to="/blogs" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
-        </ul>
-      </div>
+<!-- Mobile Menu -->
+<div v-if="isOpen" class="md:hidden bg-[#1a0b2e] px-6 py-4">
+  <ul class="flex flex-col space-y-4 text-white font-medium">
+    <li><router-link @click="closeMenu" to="/">Home</router-link></li>
+    <li><router-link @click="closeMenu" to="/about">About</router-link></li>
+    <li><router-link @click="closeMenu" to="/builds">Builds</router-link></li>
+    <li><router-link @click="closeMenu" to="/whyUs">Why Us</router-link></li>
+    <li><router-link @click="closeMenu" to="/team">Our Team</router-link></li>
+    <li><router-link @click="closeMenu" to="/contact">Contact</router-link></li>
+    <li><router-link @click="closeMenu" to="/blogs">Blogs</router-link></li>
+  </ul>
+</div>
 
     </nav>
   </div>
@@ -70,8 +68,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { Menu as MenuIcon, X as XIcon } from 'lucide-vue-next'
 import logo from '/src/assets/pc/logo.jpg'
-import { useRoute } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 
+const router = useRouter()
 const route = useRoute()
 const isOpen = ref(false)
 const isHidden = ref(false)
@@ -86,10 +85,11 @@ function closeMenu() {
   isOpen.value = false
 }
 
-function navigateAndClose(section) {
-  closeMenu()
-  scrollToSection(section)
-}
+
+// function navigateAndClose(section) {
+//   closeMenu()
+//   scrollToSection(section)
+// }
 
 function handleScroll() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop
@@ -114,12 +114,12 @@ function handleScroll() {
 }
 
 
-function scrollToSection(id) {
-  const element = document.getElementById(id)
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
-  }
-}
+// function scrollToSection(id) {
+//   const element = document.getElementById(id)
+//   if (element) {
+//     element.scrollIntoView({ behavior: 'smooth' })
+//   }
+// }
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)

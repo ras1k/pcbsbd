@@ -7,7 +7,11 @@
 
       <!-- Our Values Section -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16 items-center">
-        <div class="space-y-6">
+        <div
+          class="space-y-6"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h3 class="text-3xl font-semibold text-violet-700">Our Values</h3>
           <p class="text-gray-700 text-lg">
             At PCBSBD, we’re committed to providing high-quality PC builds and solutions that are 
@@ -21,7 +25,12 @@
             <li>Innovative solutions to meet every type of need, from gaming to workstations</li>
           </ul>
         </div>
-        <div data-aos="zoom-in" class="group bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl border border-gray-200">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          class="group bg-white rounded-2xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl border border-gray-200"
+        >
           <img 
             src="/src/assets/pc/cover.jpg" 
             alt="Our Values" 
@@ -32,7 +41,12 @@
 
       <!-- Unique Offerings Section -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        <div data-aos="fade-right" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center"
+        >
           <div class="text-violet-700 text-5xl mb-6 transition-transform duration-500 hover:rotate-12">
             <i class="fas fa-cogs"></i>
           </div>
@@ -42,7 +56,12 @@
           </p>
         </div>
 
-        <div data-aos="zoom-out" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-duration="1000"
+          class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center"
+        >
           <div class="text-violet-700 text-5xl mb-6 transition-transform duration-500 hover:rotate-12">
             <i class="fas fa-shield-alt"></i>
           </div>
@@ -52,7 +71,12 @@
           </p>
         </div>
 
-        <div data-aos="fade-left" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center"
+        >
           <div class="text-violet-700 text-5xl mb-6 transition-transform duration-500 hover:rotate-12">
             <i class="fas fa-headset"></i>
           </div>
@@ -64,7 +88,12 @@
       </div>
 
       <!-- Call to Action Section -->
-      <div data-aos="zoom-in" class="text-center py-16 bg-gradient-to-r from-violet-700 to-violet-900 text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl">
+      <div
+        data-aos="zoom-in"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+        class="text-center py-16 bg-gradient-to-r from-violet-700 to-violet-900 text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl"
+      >
         <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Ready to Build Your Perfect PC?</h3>
         <p class="text-lg mb-8">Let PCBSBD help you create the best PC build for your needs. Get in touch with us today!</p>
         <router-link to="/contact"
@@ -76,6 +105,7 @@
     </div>
   </section>
 </template>
+
 
 <script setup>
 // No script needed for now

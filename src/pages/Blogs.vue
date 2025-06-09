@@ -68,7 +68,7 @@ const toggle = (index) => {
 const blogs = ref([
   {
     title: 'The Ultimate Guide to Building Your First Gaming PC',
-    image: `/src/assets/pc/pc-1.jpg`,
+    image: img1,
     content: `
       <p>Building a gaming PC might feel intimidating, but it's one of the most rewarding things you can do as a gamer. Here's a quick breakdown:</p>
       <ul>
@@ -82,7 +82,7 @@ const blogs = ref([
   },
   {
     title: '5 Signs It’s Time to Upgrade Your PC',
-    image: `/src/assets/pc/pc-2.jpg`,
+    image: img2,
     content: `
       <p>Your PC served you well, but is it falling behind? Look for these signs:</p>
       <ol>
@@ -97,7 +97,7 @@ const blogs = ref([
   },
   {
     title: 'Air vs Liquid Cooling: Real-World Comparison',
-    image: `/src/assets/pc/pc-3.jpg`,
+    image: img3,
     content: `
       <p>Should you go with an air tower cooler or a sleek AIO liquid cooler? It depends:</p>
       <ul>
@@ -109,7 +109,7 @@ const blogs = ref([
   },
   {
     title: 'Top 10 Tools Every PC Builder Should Own',
-    image: `/src/assets/pc/pc-4.jpg`,
+    image: img4,
     content: `
       <ul>
         <li>Magnetic screwdriver set</li>
@@ -128,7 +128,7 @@ const blogs = ref([
   },
   {
     title: 'Avoid These Mistakes When Picking Parts',
-    image: `/src/assets/pc/pc-5.jpg`,
+    image: img5,
     content: `
       <p>Don't get burned — here’s what to avoid when choosing components:</p>
       <ol>

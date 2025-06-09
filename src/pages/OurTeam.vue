@@ -54,7 +54,7 @@
           </div>
           <div class="p-6">
             <h3 class="text-2xl font-bold text-violet-900 mb-2">Taief Hossain</h3>
-            <p class="text-violet-700 font-semibold">Business Consultant</p>
+            <p class="text-violet-700 font-semibold">Technology/Business Consultant</p>
             <p class="text-gray-600 mt-2">Focuses on smart business strategies and process improvement.</p>
           </div>
         </div>
