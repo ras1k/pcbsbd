@@ -53,42 +53,47 @@
 
 <script setup>
 import { ref } from 'vue';
-
+import img1 from '@/assets/pc/pc-1.jpg';
+import img2 from '@/assets/pc/pc-2.jpg';
+import img3 from '@/assets/pc/pc-3.jpg';
+import img4 from '@/assets/pc/pc-4.jpg';
+import img5 from '@/assets/pc/pc-5.jpg';
+import img6 from '@/assets/pc/pc-6.jpg';
 const builds = ref([
   {
     title: "Gaming Beast",
     description: "High-performance gaming PC built to handle the latest AAA games at ultra settings.",
-    image: "/src/assets/pc/pc-1.jpg",
+    image: img1,
     tags: ["RTX 4080", "i9-13900K", "32GB DDR5"]
   },
   {
     title: "Workstation Pro",
     description: "A powerful workstation for content creation, 3D modeling, and rendering.",
-    image: "/src/assets/pc/pc-2.jpg",
+    image: img2,
     tags: ["RTX 4090", "Ryzen 9 7950X", "64GB DDR5"]
   },
   {
     title: "Budget Champion",
     description: "Affordable and reliable build for everyday tasks, web browsing, and light gaming.",
-    image: "/src/assets/pc/pc-3.jpg",
+    image: img3,
     tags: ["RTX 3060", "Ryzen 5 5600", "16GB DDR4"]
   },
   {
     title: "Streamer Setup",
     description: "Perfect for streaming and multitasking with high frame rate support and quiet cooling.",
-    image: "/src/assets/pc/pc-2.jpg",
+    image: img4,
     tags: ["Dual PC", "Capture Card", "Low Noise"]
   },
   {
     title: "Mini ITX",
     description: "Compact and powerful — ideal for small spaces without sacrificing performance.",
-    image: "/src/assets/pc/pc-3.jpg",
+    image: img5,
     tags: ["Small Form Factor", "Portable", "Efficient"]
   },
   {
     title: "Creator Rig",
     description: "Designed for video editing and graphic design with fast rendering and smooth multitasking.",
-    image: "/src/assets/pc/pc-1.jpg",
+    image: img6,
     tags: ["4K Editing", "Color Accurate", "Multi-threaded"]
   }
 ]);
