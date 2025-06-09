@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-violet-950 text-white px-6 sm:px-10 lg:px-20">
-    <div class="max-w-7xl mx-auto w-full">
+    <div class="container mx-auto w-full">
       <!-- Top Nav Row -->
       <div
         class="flex flex-col md:flex-row justify-between items-center gap-4 px-0 py-6 border-b border-violet-800"
@@ -23,6 +23,7 @@
           <router-link to="/whyUs" class="hover:text-violet-400 transition">Why Us</router-link>
           <router-link to="/builds" class="hover:text-violet-400 transition">Builds</router-link>
           <router-link to="/team" class="hover:text-violet-400 transition">Our Team</router-link>
+          <router-link to="/blogs" class="hover:text-violet-400 transition">Blogs</router-link>
         </nav>
       </div>
 
@@ -69,17 +70,24 @@
 
         <!-- Right: Gallery -->
         <div
-          class="w-full lg:w-1/3 flex flex-col items-center lg:items-center text-center"
+          class="w-full lg:w-1/3 flex flex-col items-center lg:items-center text-center lg:ps-8 ps-0"
         >
           <h3 class="text-xl font-bold flex items-center justify-center mb-3">
             Gallery
           </h3>
-          <div class="flex flex-wrap justify-center lg:justify-end gap-1">
+          <!-- <img src="@/assets/pc/pc-2.jpg" alt=""> -->
+          <div class="flex flex-wrap justify-center lg:justify-end gap-2">
             <div
-              v-for="i in 12"
+              v-for="i in 6"
               :key="i"
-              class="w-14 h-14 bg-white rounded"
-            ></div>
+              class="w-14 h-14 rounded"
+            >
+              <img
+                :src="`/src/assets/pc/pc-${i}.jpg`"
+                alt="Gallery Image"
+                class="w-full h-full object-cover rounded"
+              />
+          </div>
           </div>
         </div>
       </div>

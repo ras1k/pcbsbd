@@ -4,6 +4,9 @@
       <h2 class="text-3xl sm:text-4xl font-bold text-violet-800 text-center mb-8">
         Contact Us
       </h2>
+      <!-- {{ publicKey }}
+      {{ serviceId }}
+      {{ templateId }} -->
       
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         
@@ -103,6 +106,9 @@
 import { ref } from 'vue'
 import emailjs from '@emailjs/browser'
 import { useToast } from "vue-toast-notification";
+const serviceId = import.meta.env.VITE_SERVICE_ID;
+const templateId = import.meta.env.VITE_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 const toast = useToast()
 
 const formData = ref({
@@ -124,13 +130,13 @@ const submitForm = async () => {
 
   try {
     await emailjs.send(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
+      serviceId, // EmailJS service ID
+      templateId, // EmailJS template ID
       templateParams,
-      'YOUR_PUBLIC_KEY'
+      publicKey // EmailJS public key
     )
 
-    toast.success('Message sent successfully!')
+    toast.success('Your email is sent successfully!')
     formData.value = { name: '', email: '', message: '' }
   } catch (error) {
     console.error('EmailJS error:', error)

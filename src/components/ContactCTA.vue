@@ -4,6 +4,9 @@
       <h2 class="text-3xl sm:text-4xl font-bold text-violet-800 text-center mb-8">
         Contact Us
       </h2>
+      <!-- {{ publicKey }}
+      {{ serviceId }}
+      {{ templateId }} -->
       
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         
@@ -52,7 +55,7 @@
         </div>
         
         <!-- Contact Info -->
-        <div class="bg-slate-50 shadow-lg rounded-lg p-8 border border-gray-200" data-aos="fade-left" data-aos-duration="1500">
+        <div class="bg-gray-50 shadow-lg rounded-lg p-8 border border-gray-200" data-aos="fade-left" data-aos-duration="1500">
           <div class="absolute inset-0 z-0">
             <canvas id="particles" class="w-full h-full"></canvas>
           </div>
@@ -101,6 +104,12 @@
 
 <script setup>
 import { ref } from 'vue'
+import emailjs from '@emailjs/browser'
+import { useToast } from "vue-toast-notification";
+const serviceId = import.meta.env.VITE_SERVICE_ID;
+const templateId = import.meta.env.VITE_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+const toast = useToast()
 
 const formData = ref({
   name: '',
@@ -112,16 +121,36 @@ const isSubmitting = ref(false)
 
 const submitForm = async () => {
   isSubmitting.value = true
-  // Simulate sending form data
-  await new Promise(resolve => setTimeout(resolve, 2000))
-  
-  // Reset the form after submission
-  formData.value = { name: '', email: '', message: '' }
-  isSubmitting.value = false
-  alert('Message sent successfully!')
+
+  const templateParams = {
+    from_name: formData.value.name,
+    from_email: formData.value.email,
+    message: formData.value.message,
+  }
+
+  try {
+    await emailjs.send(
+      serviceId, // EmailJS service ID
+      templateId, // EmailJS template ID
+      templateParams,
+      publicKey // EmailJS public key
+    )
+
+    toast.success('Your email is sent successfully!')
+    formData.value = { name: '', email: '', message: '' }
+  } catch (error) {
+    console.error('EmailJS error:', error)
+    toast.error('Failed to send message. Please try again.')
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>
+
 
 <style scoped>
 /* Optional: Style the map iframe and other elements */
 </style>
+
+
+

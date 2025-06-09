@@ -7,6 +7,7 @@ import FeaturedBuilds from "../pages/FeaturedBuilds.vue";
 import WhyChooseUs from "../pages/WhyChooseUs.vue";
 import ContactCTA from "../pages/ContactCTA.vue";
 import OurTeam from "../pages/OurTeam.vue";
+import Blogs from "../pages/Blogs.vue";
 
 const routes=[
     
@@ -40,6 +41,11 @@ const routes=[
         path:'/team',
         name:'team',
         component: OurTeam,
+    },
+    {
+        path:'/blogs',
+        name:'blogs',
+        component: Blogs,
     },
     
     

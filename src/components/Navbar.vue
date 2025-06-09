@@ -31,6 +31,7 @@
           <li><router-link to="/whyUs" @click="scrollToSection('whyus')" class="hover:text-violet-300 transition cursor-pointer">Why Us</router-link></li>
           <li><router-link to="/team" @click="scrollToSection('team')" class="hover:text-violet-300 transition cursor-pointer">Our Team</router-link></li>
           <li><router-link to="/contact" @click="scrollToSection('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
+          <li><router-link to="/blogs" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
         </ul>
 
         <!-- Mobile Hamburger -->
@@ -55,6 +56,7 @@
           <li><router-link to="/whyUs" @click="scrollToSection('whyus')" class="hover:text-violet-300 transition cursor-pointer">Why Us</router-link></li>
           <li><router-link to="/team" @click="scrollToSection('team')" class="hover:text-violet-300 transition cursor-pointer">Our Team</router-link></li>
           <li><router-link to="/contact" @click="scrollToSection('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
+          <li><router-link to="/blogs" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
         </ul>
       </div>
 
