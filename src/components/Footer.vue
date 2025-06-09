@@ -76,21 +76,44 @@
             Gallery
           </h3>
           <!-- <img src="@/assets/pc/pc-2.jpg" alt=""> -->
-          <div class="flex flex-wrap justify-center lg:justify-end gap-2">
-            <div
-              v-for="i in 6"
-              :key="i"
-              class="w-14 h-14 rounded"
-            >
-              <img
-                :src="`/src/assets/pc/pc-${i}.jpg`"
-                alt="Gallery Image"
-                class="w-full h-full object-cover rounded"
-              />
-          </div>
-          </div>
+            <div class="flex flex-wrap justify-center lg:justify-end gap-2">
+    <div
+      v-for="(img, index) in imgs"
+      :key="index"
+      class="w-14 h-14 rounded"
+    >
+      <img
+        :src="img"
+        alt="Gallery Image"
+        class="w-full h-full object-cover rounded"
+      />
+    </div>
+  </div>
         </div>
       </div>
     </div>
   </footer>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+import { useRoute } from 'vue-router';
+import img1 from '@/assets/pc/pc-1.jpg';
+import img2 from '@/assets/pc/pc-2.jpg';
+import img3 from '@/assets/pc/pc-3.jpg';
+import img4 from '@/assets/pc/pc-4.jpg';
+import img5 from '@/assets/pc/pc-5.jpg';
+import img6 from '@/assets/pc/pc-6.jpg';
+
+const route = useRoute();
+
+
+const imgs = ref([
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6
+]);
+</script>

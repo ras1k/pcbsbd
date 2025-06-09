@@ -51,12 +51,19 @@
 
 <script setup>
 import { ref } from 'vue'
-
+import img1 from '@/assets/pc/pc-1.jpg'
+import img2 from '@/assets/pc/pc-2.jpg'
+import img3 from '@/assets/pc/pc-3.jpg'
+import img4 from '@/assets/pc/pc-4.jpg'
+import img5 from '@/assets/pc/pc-5.jpg'
+const images = [img1, img2, img3, img4, img5]
 const activeIndex = ref(null)
 
 const toggle = (index) => {
   activeIndex.value = activeIndex.value === index ? null : index
 }
+
+
 
 const blogs = ref([
   {
