@@ -18,7 +18,9 @@
         <!-- <span class="text-white">{{ route.name }}</span> -->
         <!-- Logo -->
         <div class="text-white font-bold text-2xl cursor-pointer">
-            <!-- <img src="/src/assets/pc/logo.jpg" class="w-24 h-12" alt=""> -->
+           <!-- <div @click="scrollToSection('home')" class="flex items bg-white p-1 rounded">
+             <img src="/src/assets/pc/logo.jpg" class="w-24 h-12 rounded" alt="">
+           </div> -->
              <a @click="scrollToSection('home')">PCBS<span class="text-violet-400">BD</span></a>
           
         </div>
