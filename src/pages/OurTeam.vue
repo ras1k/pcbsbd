@@ -6,11 +6,9 @@
       </h2>
 
       <!-- CEO -->
-      <div class="flex justify-center mb-20">
-        <!-- CEO Card -->
+      <div class="flex justify-center mb-20" data-aos="zoom-in">
         <div
-          class="group w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
-          data-aos="zoom-in"
+          class="group w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
         >
           <div class="overflow-hidden flex justify-center mt-6">
             <img src="/src/assets/images/people.jpg" alt="CEO"
@@ -23,14 +21,13 @@
           </div>
         </div>
       </div>
-      
 
       <!-- Consultants -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 mb-20">
         <!-- Consultant 1 -->
         <div
-          class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
-          data-aos="fade-right"
+          data-aos="fade-up"
+          class="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
         >
           <div class="overflow-hidden flex justify-center mt-6">
             <img src="/src/assets/images/people.jpg" alt="Consultant"
@@ -45,8 +42,8 @@
 
         <!-- Consultant 2 -->
         <div
-          class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
-          data-aos="fade-left"
+          data-aos="fade-up"
+          class="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
         >
           <div class="overflow-hidden flex justify-center mt-6">
             <img src="/src/assets/images/people.jpg" alt="Consultant"
@@ -61,11 +58,11 @@
       </div>
 
       <!-- Other Members -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12 ">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
         <!-- Graphics Designer -->
         <div
-          class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
-          data-aos="fade-up-right"
+          data-aos="fade-up"
+          class="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
         >
           <div class="overflow-hidden flex justify-center mt-6">
             <img src="/src/assets/images/people.jpg" alt="Graphics Designer"
@@ -80,8 +77,8 @@
 
         <!-- Digital Marketer & Sales -->
         <div
-          class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
-          data-aos="fade-up-left"
+          data-aos="fade-up"
+          class="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
         >
           <div class="overflow-hidden flex justify-center mt-6">
             <img src="/src/assets/images/people.jpg" alt="Digital Marketer"
@@ -97,6 +94,9 @@
     </div>
   </section>
 </template>
+
+
+
 
 <script setup>
 // No script needed

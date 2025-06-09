@@ -44,7 +44,7 @@
         <!-- Build 3 -->
         <div 
           class="group bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02]"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div class="overflow-hidden">

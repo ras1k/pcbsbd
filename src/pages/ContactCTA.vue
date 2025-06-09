@@ -4,17 +4,19 @@
       <h2 class="text-3xl sm:text-4xl font-bold text-violet-800 text-center mb-8">
         Contact Us
       </h2>
-      <!-- {{ publicKey }}
-      {{ serviceId }}
-      {{ templateId }} -->
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         
         <!-- Contact Form -->
-        <div class="bg-gray-50 shadow-lg rounded-lg p-8 border border-gray-200" data-aos="fade-right" data-aos-duration="1500">
+        <div
+          class="bg-gray-50 shadow-lg rounded-lg p-8 border border-gray-200"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+        >
           <h3 class="text-2xl font-semibold text-violet-800 mb-6">Get in Touch</h3>
           
-          <form @submit.prevent="submitForm" action="" method="POST" > 
+          <form @submit.prevent="submitForm" method="POST"> 
             <div class="mb-4">
               <label for="name" class="block text-lg font-medium text-gray-700">Your Name</label>
               <input 
@@ -55,7 +57,12 @@
         </div>
         
         <!-- Contact Info -->
-        <div class="bg-gray-50 shadow-lg rounded-lg p-8 border border-gray-200" data-aos="fade-left" data-aos-duration="1500">
+        <div
+          class="bg-gray-50 shadow-lg rounded-lg p-8 border border-gray-200"
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-duration="1000"
+        >
           <div class="absolute inset-0 z-0">
             <canvas id="particles" class="w-full h-full"></canvas>
           </div>
@@ -89,18 +96,25 @@
       </div>
 
       <!-- Map Section (optional) -->
-      <div class="mt-16 bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up"  data-aos-duration="1500">
+      <div
+        class="mt-16 bg-white p-8 rounded-lg shadow-lg"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
         <h3 class="text-2xl font-semibold text-violet-800 text-center mb-6">Find Us on the Map</h3>
         <div class="relative w-full h-72 rounded-lg">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.358555739711!2d90.3485717154078!3d23.810313684556085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c78caceb56ab%3A0xd2bb9d1e072849cf!2sDhaka!5e0!3m2!1sen!2sbd!4v1685041615223!5m2!1sen!2sbd"
             class="absolute top-0 left-0 w-full h-full rounded-lg border-0"
-            loading="lazy"></iframe>
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </div>
   </section>
 </template>
+
 
 <script setup>
 import { ref } from 'vue'
