@@ -102,7 +102,7 @@ const blogs = ref([
   },
   {
     title: 'Top 10 Tools Every PC Builder Should Own',
-    image: 'https://images.unsplash.com/photo-1581092914043-7b3d64b252b4',
+    image: `/src/assets/pc/pc-4.jpg`,
     content: `
       <ul>
         <li>Magnetic screwdriver set</li>
@@ -121,7 +121,7 @@ const blogs = ref([
   },
   {
     title: 'Avoid These Mistakes When Picking Parts',
-    image: 'https://images.unsplash.com/photo-1618375531913-3e3ef1ec03a0',
+    image: `/src/assets/pc/pc-5.jpg`,
     content: `
       <p>Don't get burned — here’s what to avoid when choosing components:</p>
       <ol>
