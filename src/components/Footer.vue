@@ -15,7 +15,7 @@
         <img
           src="@/assets/pc/cover-2.jpg"
           alt="Logo"
-          class="h-14 sm:h-20 object-contain"
+          class="h-14 sm:h-20 object-contain rounded-lg shadow-lg mx-auto md:mx-0"
         />
         <nav
           class="flex flex-wrap justify-center md:justify-end space-x-4 text-sm sm:text-base font-semibold"

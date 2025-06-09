@@ -42,7 +42,62 @@
     </div>
 
   </section>
-  
+  <section class="bg-[#dfd8e9] text-[#1E1B4B] py-24 px-4">
+  <div class="container mx-auto max-w-7xl">
+    <h2 class="text-4xl sm:text-5xl font-bold text-center mb-16">The Smarter Way to Build Your PC</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+
+      <!-- Left: Bullet List -->
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
+          <span class="w-4 h-4 bg-violet-500 rounded-full mt-2"></span>
+          <p class="text-lg font-medium">Customized builds tailored to your needs</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="w-4 h-4 bg-violet-500 rounded-full mt-2"></span>
+          <p class="text-lg font-medium">Premium components from trusted brands</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="w-4 h-4 bg-violet-500 rounded-full mt-2"></span>
+          <p class="text-lg font-medium">Expert cable management for optimal airflow</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="w-4 h-4 bg-violet-500 rounded-full mt-2"></span>
+          <p class="text-lg font-medium">Thorough stress testing before delivery</p>
+        </div>
+        <div class="mt-8">
+          <p class="text-sm uppercase tracking-wider">Our Experience</p>
+          <p class="text-2xl font-bold">We've Completed <span class="italic">50+ Custom Builds</span></p>
+        </div>
+      </div>
+
+      <!-- Center: PC Image -->
+      <div class="flex justify-center animate-fade-in" style="animation-delay: 0.3s;">
+        <img src="/src/assets/pc/pc-7.jpg" alt="Custom Gaming PC with RGB lighting" class="w-full max-w-sm rounded-2xl shadow-xl">
+      </div>
+
+      <!-- Right: Component Info Blocks -->
+      <div class="space-y-8">
+        <div>
+          <h4 class="font-bold italic text-lg">High-Performance CPUs</h4>
+          <p class="text-gray-700">Latest generation processors from Intel and AMD for maximum computing power.</p>
+        </div>
+        <div>
+          <h4 class="font-bold italic text-lg">Powerful Graphics</h4>
+          <p class="text-gray-700">Top-tier GPUs to handle gaming, content creation, and professional workloads.</p>
+        </div>
+        <div>
+          <h4 class="font-bold italic text-lg">Fast Storage</h4>
+          <p class="text-gray-700">NVMe SSDs with blazing fast read/write speeds for instant load times.</p>
+        </div>
+        <div>
+          <h4 class="font-bold italic text-lg">Efficient Cooling</h4>
+          <p class="text-gray-700">Advanced air and liquid cooling solutions to keep your system running optimally.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </template>
 
 <script setup>
