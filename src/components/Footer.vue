@@ -60,8 +60,9 @@
         type="email"
         v-model="email"
         placeholder="Email"
-        class="w-full p-2 rounded-t-md text-black focus:outline-none"
+        class="w-full p-2 rounded-t-md text-black focus:outline-none placeholder: text-center placeholder:text-gray-500"
         :class="{ 'border-2 border-red-500': emailError }"
+        
       />
       <p v-if="emailError" class="text-red-400 text-xs mt-1">{{ emailError }}</p>
       <button
@@ -103,8 +104,17 @@
   </div>
         </div>
       </div>
+      
     </div>
+
   </footer>
+   <div class="text-center bg-violet-900 text-white py-5">
+        All Right Reserved
+  
+        <span class="text-lg font-bold italic">PC Building Solutions Bangladesh</span>
+        &copy;
+        {{ new Date().getFullYear() }}
+  </div>
 </template>
 
 <script setup>
