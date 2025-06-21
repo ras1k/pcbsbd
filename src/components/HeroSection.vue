@@ -43,7 +43,7 @@
 
   </section>
   <section class="bg-[#dfd8e9] text-[#1E1B4B] py-24 px-4">
-  <div class="container mx-auto max-w-7xl">
+  <div class="container mx-auto ">
     <h2 class="text-4xl sm:text-5xl font-bold text-center mb-16">The Smarter Way to Build Your PC</h2>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
 
