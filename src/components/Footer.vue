@@ -55,18 +55,30 @@
 
         <!-- Center: Newsletter -->
         <div class="w-full lg:w-1/3 text-center">
-          <p class="mb-2 text-sm">Join our newsletter for new updates</p>
-          <input
-            type="email"
-            placeholder="Email"
-            class="w-full p-2 rounded-t-md text-black focus:outline-none"
-          />
-          <button
-            class="w-full bg-violet-500 hover:bg-violet-600 text-white font-semibold py-2 rounded-b-md"
-          >
-            SUBSCRIBE
-          </button>
-        </div>
+      <p class="mb-2 text-sm">Join our newsletter for new updates</p>
+      <input
+        type="email"
+        v-model="email"
+        placeholder="Email"
+        class="w-full p-2 rounded-t-md text-black focus:outline-none"
+        :class="{ 'border-2 border-red-500': emailError }"
+      />
+      <p v-if="emailError" class="text-red-400 text-xs mt-1">{{ emailError }}</p>
+      <button
+        @click="subscribe"
+        :disabled="isSubmitting"
+        class="w-full bg-violet-500 hover:bg-violet-600 text-white font-semibold py-2 rounded-b-md flex items-center justify-center gap-2 disabled:bg-violet-400"
+      >
+        <span v-if="!isSubmitting">SUBSCRIBE</span>
+        <span v-else class="flex items-center gap-2">
+          <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          Processing...
+        </span>
+      </button>
+    </div>
 
         <!-- Right: Gallery -->
         <div
@@ -98,6 +110,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
+import { useToast } from "vue-toast-notification";
 import img1 from '@/assets/pc/pc-1.jpg';
 import img2 from '@/assets/pc/pc-2.jpg';
 import img3 from '@/assets/pc/pc-3.jpg';
@@ -105,6 +118,7 @@ import img4 from '@/assets/pc/pc-4.jpg';
 import img5 from '@/assets/pc/pc-5.jpg';
 import img6 from '@/assets/pc/pc-6.jpg';
 
+const toast = useToast()
 const route = useRoute();
 
 
@@ -116,4 +130,37 @@ const imgs = ref([
   img5,
   img6
 ]);
+
+const email = ref('');
+const isSubmitting = ref(false);
+const emailError = ref('');
+
+const validateEmail = (email) => {
+  // Regular expression for basic email validation
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+};
+
+const subscribe = async () => {
+  emailError.value = '';
+  
+  if (!email.value) {
+    emailError.value = 'Please enter your email address';
+    return;
+  }
+  
+  if (!validateEmail(email.value)) {
+    emailError.value = 'Please enter a valid email address';
+    return;
+  }
+  
+  isSubmitting.value = true;
+  
+  // Simulate API call with a delay
+  await new Promise(resolve => setTimeout(resolve, 1500));
+  
+  toast.success('You have successfully subscribed to our newsletter!');
+  email.value = '';
+  isSubmitting.value = false;
+};
 </script>
