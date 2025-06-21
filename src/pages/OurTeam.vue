@@ -13,7 +13,7 @@
       <!-- CEO -->
       <div class="flex justify-center mb-20" data-aos="zoom-in">
         <div
-          class="group w-full max-w-lg bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
+          class="group w-full max-w-xl bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-3"
         >
           <div class="overflow-hidden flex justify-center mt-6">
             <img src="/src/assets/images/people-4.png" alt="CEO"
