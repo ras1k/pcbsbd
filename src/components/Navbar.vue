@@ -2,10 +2,10 @@
   <div>
     <!-- Scroll Progress Bar -->
     <div
-    v-if="route.name == 'home'"
-    class="fixed top-0 left-0 h-1 bg-violet-500 z-[60] transition-all duration-200"
-    :style="{ width: scrollProgress + '%' }"
-  ></div>
+      v-if="route.name == 'home'"
+      class="fixed top-0 left-0 h-1 bg-violet-500 z-[60] transition-all duration-200"
+      :style="{ width: scrollProgress + '%' }"
+    ></div>
   
 
     <!-- Navbar -->
@@ -15,12 +15,9 @@
               'bg-[#1a0b2e]/80 backdrop-blur-md shadow-md']">
       
       <div class="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
-        <!-- <span class="text-white">{{ route.name }}</span> -->
         <!-- Logo -->
         <div class="text-white font-bold text-2xl cursor-pointer">
-            <!-- <img src="/src/assets/pc/logo.jpg" class="w-24 h-12" alt=""> -->
-             <a @click="scrollToSection('home')">PCBS<span class="text-violet-400">BD</span></a>
-          
+          <a @click="scrollToSection('home')">PCBS<span class="text-violet-400">BD</span></a>
         </div>
 
         <!-- Desktop Menu -->
@@ -48,18 +45,26 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div v-if="isOpen" class="md:hidden bg-[#1a0b2e] px-6 py-4">
-        <ul class="flex flex-col space-y-4 text-white font-medium">
-          <li><router-link to="/" @click="scrollToSection('home')" class="hover:text-violet-300 transition cursor-pointer">Home</router-link></li>
-          <li><router-link to="/about" class="hover:text-violet-300 transition cursor-pointer">About</router-link></li>
-          <li><router-link to="/builds" @click="scrollToSection('builds')" class="hover:text-violet-300 transition cursor-pointer">Builds</router-link></li>
-          <li><router-link to="/whyUs" @click="scrollToSection('whyus')" class="hover:text-violet-300 transition cursor-pointer">Why Us</router-link></li>
-          <li><router-link to="/team" @click="scrollToSection('team')" class="hover:text-violet-300 transition cursor-pointer">Our Team</router-link></li>
-          <li><router-link to="/contact" @click="scrollToSection('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
-          <li><router-link to="/blogs" @click="scrollToSection('blogs')" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
-        </ul>
-      </div>
-
+      <transition
+        enter-active-class="transition-all duration-300 ease-out"
+        leave-active-class="transition-all duration-200 ease-in"
+        enter-from-class="opacity-0 max-h-0"
+        enter-to-class="opacity-100 max-h-[500px]"
+        leave-from-class="opacity-100 max-h-[500px]"
+        leave-to-class="opacity-0 max-h-0"
+      >
+        <div v-if="isOpen" class="md:hidden bg-[#1a0b2e] px-6 py-4 overflow-hidden">
+          <ul class="flex flex-col space-y-4 text-white font-medium">
+            <li><router-link to="/" @click="navigateAndClose('home')" class="hover:text-violet-300 transition cursor-pointer">Home</router-link></li>
+            <li><router-link to="/about" @click="closeMenu" class="hover:text-violet-300 transition cursor-pointer">About</router-link></li>
+            <li><router-link to="/builds" @click="navigateAndClose('builds')" class="hover:text-violet-300 transition cursor-pointer">Builds</router-link></li>
+            <li><router-link to="/whyUs" @click="navigateAndClose('whyus')" class="hover:text-violet-300 transition cursor-pointer">Why Us</router-link></li>
+            <li><router-link to="/team" @click="navigateAndClose('team')" class="hover:text-violet-300 transition cursor-pointer">Our Team</router-link></li>
+            <li><router-link to="/contact" @click="navigateAndClose('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
+            <li><router-link to="/blogs" @click="navigateAndClose('blogs')" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
+          </ul>
+        </div>
+      </transition>
     </nav>
   </div>
 </template>
@@ -67,7 +72,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { Menu as MenuIcon, X as XIcon } from 'lucide-vue-next'
-import logo from '/src/assets/pc/logo.jpg'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
@@ -93,24 +97,20 @@ function handleScroll() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop
 
   if (route.name == 'home') {
-    // Hide/Show Navbar on scroll only on home page
     if (scrollTop > lastScrollTop) {
       isHidden.value = true
     } else {
       isHidden.value = false
     }
   } else {
-    // Always show navbar on other pages
     isHidden.value = false
   }
 
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop
 
-  // Update Scroll Progress
   const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
   scrollProgress.value = (scrollTop / docHeight) * 100
 }
-
 
 function scrollToSection(id) {
   const element = document.getElementById(id)
@@ -129,7 +129,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-
 .router-link-active {
   color: #8b5cf6;
   border-bottom: 2px solid white;
