@@ -67,13 +67,14 @@
       <div class="parallax relative flex items-center justify-center">
         <div class="text-center py-16 bg-black to-violet-900 bg-opacity-50 w-[85%] text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl">
         <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Ready to Build Your Perfect PC?</h3>
-        <p class="text-lg mb-8">Let PCBSBD help you create the best PC build for your needs. Get in touch with us today!</p>
-        <a 
+        <p class="text-lg mb-8 px-2">Let PCBSBD help you create the best PC build for your needs. Get in touch with us today!</p>
+        <router-link 
+          to="/contact" 
           href="#contact" 
-          class="inline-block bg-white text-violet-700 py-3 px-8 rounded-full text-xl font-semibold transition duration-500 hover:bg-gray-100 hover:scale-110"
+          class="inline-block bg-white text-violet-700 hover:bg-violet-700 hover:text-white py-3 px-8 rounded-full text-xl font-semibold transition duration-500 hover:scale-110"
         >
           Contact Us Now
-        </a>
+        </router-link>
       </div>
       </div>
     </div>
