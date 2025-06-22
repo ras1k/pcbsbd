@@ -1,8 +1,8 @@
 <template>
-  <section id="about" class="bg-gradient-to-b from-violet-50 to-white py-16 lg:py-24">
+  <section id="about" class="bg-gradient-to-b from-violet-50 to-white py-24">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header Section -->
-      <div class="text-center mb-16 lg:mb-20">
+      <div class="text-center mb-16 lg:mb-20" data-aos="fade-down" data-aos-delay="100">
         
         <h2 class="text-4xl sm:text-5xl font-extrabold text-violet-900 mb-4 leading-tight">
           About <span class="text-violet-600">PCBSBD</span>
