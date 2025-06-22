@@ -56,9 +56,9 @@ import { ref } from 'vue';
 import img1 from '@/assets/pc/pc-1.jpg';
 import img2 from '@/assets/pc/pc-2.jpg';
 import img3 from '@/assets/pc/pc-3.jpg';
-import img4 from '@/assets/pc/pc-4.jpg';
+import img4 from '@/assets/pc/pc-8.jpg';
 import img5 from '@/assets/pc/pc-5.jpg';
-import img6 from '@/assets/pc/pc-6.jpg';
+import img6 from '@/assets/pc/pc-10.jpg';
 const builds = ref([
   {
     title: "Gaming Beast",
