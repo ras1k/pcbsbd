@@ -86,7 +86,7 @@
 
 <style scoped>
 .parallax {
-  background-image: url("/src/assets/pc/pc-3.jpg");
+  background-image: url("/src/assets/pc/pc-9.jpg");
 
   min-height: 500px;
 
