@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 pt-20 lg:pt-0 sm:p-6 min-h-screen bg-gray-100 flex items-center justify-center">
+  <div class="p-4 mt-20 lg:mt-0 sm:p-6 min-h-screen bg-gray-100 flex items-center justify-center">
     <div class="w-full max-w-3xl">
       <h1 class="text-2xl sm:text-3xl font-bold text-center mb-4 sm:mb-6 text-gray-800">
         🧾 Receipt Generator
@@ -92,13 +92,13 @@
       <!-- Action Buttons -->
       <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-6">
         <button @click="downloadPDF"
-          class="bg-blue-600 hover:bg-blue-700 w-full text-white px-4 sm:px-6 py-2 rounded-lg shadow-lg transition text-sm sm:text-base">
+          class="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-lg shadow-lg transition text-sm sm:text-base">
           Download PDF
         </button>
-        <!-- <button @click="window.print()"
+        <button @click="window.print()"
           class="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-2 rounded-lg shadow-lg transition text-sm sm:text-base">
           Print
-        </button> -->
+        </button>
       </div>
     </div>
   </div>
@@ -125,6 +125,7 @@ const addItem = () => {
 
 const clearForm = () => {
   newItem.value = { name: "", qty: 1, price: 0 };
+  window.location.reload();
 };
 
 // Totals
