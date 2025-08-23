@@ -8,6 +8,7 @@ import WhyChooseUs from "../pages/WhyChooseUs.vue";
 import ContactCTA from "../pages/ContactCTA.vue";
 import OurTeam from "../pages/OurTeam.vue";
 import Blogs from "../pages/Blogs.vue";
+import ReceiptGenerator from '/src/pages/ReceiptGenerator.vue'
 
 const routes=[
     
@@ -46,6 +47,11 @@ const routes=[
         path:'/blogs',
         name:'blogs',
         component: Blogs,
+    },
+    {
+        path:'/generate-receipt',
+        name:'generate-receipt',
+        component: ReceiptGenerator,
     },
     
     
