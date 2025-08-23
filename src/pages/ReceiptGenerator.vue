@@ -17,10 +17,13 @@
           class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg shadow transition text-sm sm:text-base w-full sm:w-auto">
           Add
         </button>
-                <button @click="clearForm" 
-          class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded-lg shadow transition">
-          Clear
-        </button>
+                      <button
+        @click="clearAll"
+        class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow"
+        v-if="items.length"
+      >
+        Clear All
+      </button>
       </div>
 
       <!-- Receipt preview -->
@@ -95,10 +98,6 @@
           class="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-lg shadow-lg transition text-sm sm:text-base">
           Download PDF
         </button>
-        <button @click="window.print()"
-          class="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-2 rounded-lg shadow-lg transition text-sm sm:text-base">
-          Print
-        </button>
       </div>
     </div>
   </div>
@@ -111,10 +110,10 @@ import html2canvas from "html2canvas";
 import logo from "/src/assets/pc/logo.jpg";
 
 const items = ref([]);
-const newItem = ref({ name: "", qty: 1, price: 0 });
+const newItem = ref({ name: "", qty: null, price: null });
 
 // Auto-generated receipt info
-const receiptNumber = "R-" + Math.floor(Math.random() * 1000000);
+const receiptNumber = "R-" + Math.floor(100000 + Math.random() * 900000);
 const currentDate = new Date().toLocaleDateString();
 
 const addItem = () => {
@@ -126,6 +125,10 @@ const addItem = () => {
 const clearForm = () => {
   newItem.value = { name: "", qty: 1, price: 0 };
   window.location.reload();
+};
+
+const clearAll = () => {
+  items.value = [];
 };
 
 // Totals
