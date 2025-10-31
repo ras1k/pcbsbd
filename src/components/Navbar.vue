@@ -28,6 +28,7 @@
           <li><router-link to="/whyUs" @click="scrollToSection('whyus')" class="hover:text-violet-300 transition cursor-pointer">Why Us</router-link></li>
           <li><router-link to="/team" @click="scrollToSection('team')" class="hover:text-violet-300 transition cursor-pointer">Our Team</router-link></li>
           <li><router-link to="/contact" @click="scrollToSection('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
+          <li><router-link to="/terms-and-conditions" @click="scrollToSection('terms-and-conditions')" class="hover:text-violet-300 transition cursor-pointer">Terms &amp; Conditions</router-link></li>
           <li><router-link to="/blogs" @click="scrollToSection('blogs')" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
         </ul>
 
@@ -61,6 +62,7 @@
             <li><router-link to="/whyUs" @click="navigateAndClose('whyus')" class="hover:text-violet-300 transition cursor-pointer">Why Us</router-link></li>
             <li><router-link to="/team" @click="navigateAndClose('team')" class="hover:text-violet-300 transition cursor-pointer">Our Team</router-link></li>
             <li><router-link to="/contact" @click="navigateAndClose('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
+            <li><router-link to="/terms-and-conditions" @click="navigateAndClose('terms-and-conditions')" class="hover:text-violet-300 transition cursor-pointer">Terms &amp; Conditions</router-link></li>
             <li><router-link to="/blogs" @click="navigateAndClose('blogs')" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
           </ul>
         </div>
@@ -130,7 +132,7 @@ onUnmounted(() => {
 
 <style scoped>
 .router-link-active {
-  color: #8b5cf6;
+  color: #a57ffd;
   border-bottom: 2px solid white;
   padding: 4px 8px;
   border-radius: 8px;

@@ -9,6 +9,7 @@ import ContactCTA from "../pages/ContactCTA.vue";
 import OurTeam from "../pages/OurTeam.vue";
 import Blogs from "../pages/Blogs.vue";
 import ReceiptGenerator from '/src/pages/ReceiptGenerator.vue'
+import TermsAndCondition from '/src/pages/TermsAndCondition.vue'
 
 const routes=[
     
@@ -52,6 +53,11 @@ const routes=[
         path:'/generate-receipt',
         name:'generate-receipt',
         component: ReceiptGenerator,
+    },
+    {
+        path:'/terms-and-conditions',
+        name:'terms-and-conditions',
+        component: TermsAndCondition,
     },
     
     
