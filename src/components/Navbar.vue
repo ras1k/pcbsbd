@@ -16,8 +16,11 @@
       
       <div class="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
         <!-- Logo -->
-        <div class="text-white font-bold text-2xl cursor-pointer">
-          <a @click="scrollToSection('home')">PCBS<span class="text-violet-400">BD</span></a>
+        <div class="text-white font-bold text-2xl cursor-pointer flex flex-col">
+          <a @click="scrollToSection('home')">
+            PCBS<span class="text-violet-400">BD</span>
+          </a> 
+          <span class="text-xs text-violet-400">PC Building Solutions <span class="text-white">BD</span></span>
         </div>
 
         <!-- Desktop Menu -->
