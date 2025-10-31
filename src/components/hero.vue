@@ -112,7 +112,7 @@
 // Imports from both files
 import { onMounted, ref } from 'vue'
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
-import { useStore } from '../store' // Assuming this path is correct
+// import { useStore } from '../store' 
 import 'vue3-carousel/dist/carousel.css'
 import img1 from '@/assets/cover/1.jpg';
 import img2 from '@/assets/cover/2.jpg';
@@ -120,7 +120,7 @@ import img3 from '@/assets/cover/3.jpg';
 import img4 from '@/assets/cover/4.jpg';
 import img5 from '@/assets/cover/5.jpg';
 // Carousel logic from second file
-const store = useStore()
+// const store = useStore()
 // console.log(store) // Kept from your original code
 const slides = ref([
     {
