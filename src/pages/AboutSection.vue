@@ -5,7 +5,7 @@
       <div class="text-center mb-16 lg:mb-20" data-aos="fade-down" data-aos-delay="100">
         
         <h2 class="text-4xl sm:text-5xl font-extrabold text-violet-900 mb-4 leading-tight">
-          About <span class="text-violet-600">Building Solutions BD</span>
+          About <span class="text-violet-600">PC Building Solutions BD</span>
         </h2>
         <h3 class="text-2xl sm:text-3xl font-semibold text-violet-700 mb-6">
           Crafting Exceptional Computing Experiences
@@ -213,7 +213,7 @@
         ></div>
         <div class="lg:text-4xl text-3xl font-bold text-violet-700 mb-2 mt-2">
           <span class="inline-flex items-center">
-            <count-up :end-val="100"></count-up>+
+            <count-up :end-val="50"></count-up>+
           </span>
         </div>
         <div class="text-gray-600 font-medium">Systems Built</div>

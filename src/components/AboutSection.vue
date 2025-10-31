@@ -57,7 +57,7 @@
         ></div>
         <div class="lg:text-4xl text-3xl font-bold text-violet-700 mb-2 mt-2">
           <span class="inline-flex items-center">
-            <count-up :end-val="100"></count-up>+
+            <count-up :end-val="50"></count-up>+
           </span>
         </div>
         <div class="text-gray-600 font-medium">Systems Built</div>
