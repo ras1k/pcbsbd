@@ -24,7 +24,7 @@
         >
         <router-link to="/team" class="hover:text-violet-400 transition">Our Team</router-link>
         <router-link to="/contact" class="hover:text-violet-400 transition">Contact</router-link>
-          <router-link to="/terms-and-conditions" class="hover:text-violet-400 transition">Terms &amp; Condition</router-link>
+          <router-link to="/terms-and-conditions" class="hover:text-violet-400 transition">T&amp;C</router-link>
           <router-link to="/blogs" class="hover:text-violet-400 transition">Blogs</router-link>
         </nav>
       </div>
