@@ -2,7 +2,7 @@
   <section id="whyus" class="bg-violet-200 py-20">
     <div class="container mx-auto px-4">
       <h2 class="text-4xl sm:text-5xl font-bold text-violet-800 text-center mb-12">
-        Why Choose PCBSBD?
+        Why Choose PC Building Solutions BD?
       </h2>
 
       <!-- Our Values Section -->

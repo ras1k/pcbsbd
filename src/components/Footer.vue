@@ -39,20 +39,13 @@
           <p class="text-sm text-gray-300 mb-4">
             Building PCs with passion and precision.
           </p>
-          <div class="flex justify-center lg:justify-start space-x-4">
-            <a href="#" class="text-gray-300 hover:text-white"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="#" class="text-gray-300 hover:text-white"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="#" class="text-gray-300 hover:text-white"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a href="#" class="text-gray-300 hover:text-white"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
+ <div class="flex space-x-4 mt-2">
+              <a href="https://www.facebook.com/share/1AKn8ZzVFq/" target="_blank" class="text-gray-300 hover:text-violet-300"><i class="fab fa-facebook"></i></a>
+              <a href="https://x.com/PCBSBD" target="_blank" class="text-gray-300 hover:text-violet-300"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/pcbsbd?igsh=amV4enRsNXRudGYw" target="_blank" class="text-gray-300 hover:text-violet-300"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/pc-building-solutions/" target="_blank" class="text-gray-300 hover:text-violet-300"><i class="fab fa-linkedin"></i></a>
+              <a href="https://youtube.com/@pcbuildingsolutions?si=e799iwpBN03ZjGiJ" target="_blank" class="text-gray-300 hover:text-violet-300"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
 
         <!-- Center: Newsletter -->

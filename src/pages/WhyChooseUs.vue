@@ -2,7 +2,7 @@
   <section id="whyus" class="bg-violet-200 py-20 relative overflow-hidden">
     <div class="container mx-auto px-4">
       <h2 class="text-4xl sm:text-5xl font-bold text-violet-800 text-center my-10">
-        Why Choose Building Solutions BD?
+        Why Choose PC Building Solutions BD?
       </h2>
 
       <!-- Our Values Section -->

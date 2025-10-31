@@ -57,18 +57,19 @@
         </div>
         
         <!-- Contact Info -->
-        <div
-          class="bg-gray-50 shadow-lg rounded-lg p-8 border border-gray-200"
-          data-aos="fade-up"
-          data-aos-delay="150"
-          data-aos-duration="1000"
-        >
-          <div class="absolute inset-0 z-0">
-            <canvas id="particles" class="w-full h-full"></canvas>
-          </div>
-          <h3 class="text-2xl font-semibold text-violet-800 mb-6">Our Contact Info</h3>
-          
-          <div class="mb-4">
+       <div
+  class="bg-gray-50 shadow-lg rounded-lg p-8 border border-gray-200 relative"
+  data-aos="fade-up"
+  data-aos-delay="150"
+  data-aos-duration="1000"
+>
+  <div class="absolute inset-0 z-0">
+    <canvas id="particles" class="w-full h-full"></canvas>
+  </div>
+
+  <div class="relative z-10">
+    <h3 class="text-2xl font-semibold text-violet-800 mb-6">Our Contact Info</h3>
+             <div class="mb-4">
             <h4 class="text-lg font-semibold text-violet-700">Address</h4>
             <p class="text-gray-700">Dhaka, Bangladesh</p>
           </div>
@@ -86,13 +87,15 @@
           <div>
             <h4 class="text-lg font-semibold text-violet-700">Follow Us</h4>
             <div class="flex space-x-4 mt-2">
-              <a href="#" class="text-violet-700 hover:text-violet-800"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="text-violet-700 hover:text-violet-800"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="text-violet-700 hover:text-violet-800"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="text-violet-700 hover:text-violet-800"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/share/1AKn8ZzVFq/" target="_blank" class="text-violet-700 hover:text-violet-800"><i class="fab fa-facebook"></i></a>
+              <a href="https://x.com/PCBSBD" target="_blank" class="text-violet-700 hover:text-violet-800"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/pcbsbd?igsh=amV4enRsNXRudGYw" target="_blank" class="text-violet-700 hover:text-violet-800"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/pc-building-solutions/" target="_blank" class="text-violet-700 hover:text-violet-800"><i class="fab fa-linkedin"></i></a>
+              <a href="https://youtube.com/@pcbuildingsolutions?si=e799iwpBN03ZjGiJ" target="_blank" class="text-violet-700 hover:text-violet-800"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
-        </div>
+  </div>
+      </div>
       </div>
 
       <!-- Map Section (optional) -->
@@ -117,7 +120,7 @@
 
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import emailjs from '@emailjs/browser'
 import { useToast } from "vue-toast-notification";
 const serviceId = import.meta.env.VITE_SERVICE_ID;
@@ -159,6 +162,98 @@ const submitForm = async () => {
     isSubmitting.value = false
   }
 }
+
+
+onMounted(() => {
+  const cards = document.querySelectorAll('#particles')
+
+  cards.forEach((canvas) => {
+    const ctx = canvas.getContext('2d')
+    let particles = []
+
+    let lineOffset = 0 // For animated diagonal lines
+    let isHovered = false
+
+    const resize = () => {
+      canvas.width = canvas.offsetWidth
+      canvas.height = canvas.offsetHeight
+    }
+    window.addEventListener('resize', resize)
+    resize()
+
+    // Track hover to animate lines
+    canvas.parentElement.addEventListener('mouseenter', () => isHovered = true)
+    canvas.parentElement.addEventListener('mouseleave', () => isHovered = false)
+
+    // Create diagonal line positions
+    const lineSpacing = 25
+    const diagonalLines = []
+    for (let x = -canvas.height; x < canvas.width + canvas.height; x += lineSpacing) {
+      diagonalLines.push({ x, y: 0 })
+    }
+
+    // Create particles
+    const count = 25
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 1.5 + 0.5,
+        dx: (Math.random() - 0.5) * 0.3,
+        dy: (Math.random() - 0.5) * 0.3,
+      })
+    }
+
+    const animate = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+      // Animate diagonal lines if hovered
+      if (isHovered) lineOffset += 0.5
+      else lineOffset *= 0.95 // slowly slow down when not hovered
+
+      // Draw diagonal tech lines
+      ctx.strokeStyle = 'rgba(128, 90, 250, 0.05)'
+      ctx.lineWidth = 1
+      diagonalLines.forEach((line) => {
+        ctx.beginPath()
+        ctx.moveTo(line.x + lineOffset, line.y)
+        ctx.lineTo(line.x + lineOffset + canvas.height, canvas.height)
+        ctx.stroke()
+      })
+
+      // Draw particles
+      particles.forEach((p) => {
+        ctx.beginPath()
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2)
+        ctx.fillStyle = 'rgba(128, 90, 250, 0.6)'
+        ctx.fill()
+
+        // Connect nearby particles
+        for (let j = 0; j < particles.length; j++) {
+          const p2 = particles[j]
+          const dist = Math.hypot(p.x - p2.x, p.y - p2.y)
+          if (dist < 40) {
+            ctx.beginPath()
+            ctx.strokeStyle = `rgba(128, 90, 250, ${1 - dist / 40})`
+            ctx.lineWidth = 0.5
+            ctx.moveTo(p.x, p.y)
+            ctx.lineTo(p2.x, p2.y)
+            ctx.stroke()
+          }
+        }
+
+        // Update particle position
+        p.x += p.dx
+        p.y += p.dy
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1
+      })
+
+      requestAnimationFrame(animate)
+    }
+    animate()
+  })
+})
 </script>
 
 

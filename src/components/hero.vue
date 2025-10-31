@@ -155,7 +155,8 @@ onMounted(() => {
   if (!canvas) return; // Added a guard in case canvas isn't found
   
   const ctx = canvas.getContext('2d')
-
+  let lineOffset = 0 // For animated diagonal lines
+    let isHovered = false
   function resize() {
     canvas.width = canvas.offsetWidth
     canvas.height = canvas.offsetHeight
