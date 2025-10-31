@@ -1,6 +1,6 @@
 <template>
-  <div class="root-container py-20 " >
-    <div class="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 py-6 bg-white shadow-xl rounded-xl  pb-12">
+  <div class="root-container py-20 !bg-violet-50" >
+    <div class="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 py-6 bg-gradient-to-r from-violet-50/70 to-white shadow-xl rounded-xl  pb-12">
       
       <!-- Header -->
       <header class="text-center pb-8 border-b border-gray-200 mb-10" data-aos="fade-down" data-aos-delay="200">
