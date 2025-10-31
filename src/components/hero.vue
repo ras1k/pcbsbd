@@ -2,7 +2,7 @@
   <section id="home" class="relative overflow-hidden lg:min-h-0 min-h-screen text-white">
     
     <div class="absolute inset-0 z-0">
-      <Carousel :autoplay="5000" :wrap-around="true" class="w-full h-full">
+      <Carousel :autoplay="4000" :wrap-around="true" class="w-full h-full">
         <Slide v-for="slide in slides" :key="slide.img">
           <div class="carousel__item w-full h-full">
             <img :src="slide.img" alt="PC Build Showcase" class="w-full h-full object-cover">
@@ -16,7 +16,7 @@
       </Carousel>
     </div>
 
-    <div class="absolute inset-0 z-10 bg-[#4B0082]/70"></div>
+    <div class="absolute inset-0 z-10 bg-[#4B0082]/60"></div>
 
     <div class="absolute inset-0 z-20">
       <canvas id="particles" class="w-full h-full"></canvas>
