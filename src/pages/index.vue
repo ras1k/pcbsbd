@@ -1,7 +1,8 @@
 <template>
   <div>
+    <hero/>
     <!-- Hero Section -->
-    <HeroSection />
+    <!-- <HeroSection /> -->
 
     <!-- About Section -->
     <AboutSection />
@@ -18,6 +19,7 @@
 </template>
 
 <script setup>
+import hero from '/src/components/hero.vue'
 import HeroSection from '/src/components/HeroSection.vue'
 import AboutSection from '/src/components/AboutSection.vue'
 import FeaturedBuilds from '/src/components/FeaturedBuilds.vue'
