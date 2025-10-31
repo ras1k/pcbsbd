@@ -70,7 +70,7 @@
           
           <div class="mb-4">
             <h4 class="text-lg font-semibold text-violet-700">Address</h4>
-            <p class="text-gray-700">123 Main Street, Dhaka, Bangladesh</p>
+            <p class="text-gray-700">Dhaka, Bangladesh</p>
           </div>
 
           <div class="mb-4">
@@ -80,7 +80,7 @@
 
           <div class="mb-4">
             <h4 class="text-lg font-semibold text-violet-700">Email</h4>
-            <p class="text-gray-700">contact@pcbsbd.com</p>
+            <p class="text-gray-700">pcbsbd@gmail.com</p>
           </div>
           
           <div>

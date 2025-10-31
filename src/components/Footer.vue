@@ -10,7 +10,9 @@
         >
           <router-link to="/" class="hover:text-violet-400 transition">Home</router-link>
           <router-link to="/about" class="hover:text-violet-400 transition">About</router-link>
-          <router-link to="/contact" class="hover:text-violet-400 transition">Contact Us</router-link>
+          <router-link to="/builds" class="hover:text-violet-400 transition">Builds</router-link>
+         
+           <router-link to="/whyUs" class="hover:text-violet-400 transition">Why Us</router-link>
         </nav>
         <img
           src="@/assets/pc/cover-2.jpg"
@@ -20,9 +22,9 @@
         <nav
           class="flex flex-wrap justify-center md:justify-end space-x-4 text-sm sm:text-base font-semibold"
         >
-          <router-link to="/whyUs" class="hover:text-violet-400 transition">Why Us</router-link>
-          <router-link to="/builds" class="hover:text-violet-400 transition">Builds</router-link>
-          <router-link to="/team" class="hover:text-violet-400 transition">Our Team</router-link>
+        <router-link to="/team" class="hover:text-violet-400 transition">Our Team</router-link>
+        <router-link to="/contact" class="hover:text-violet-400 transition">Contact</router-link>
+          <router-link to="/terms-and-conditions" class="hover:text-violet-400 transition">Terms &amp; Condition</router-link>
           <router-link to="/blogs" class="hover:text-violet-400 transition">Blogs</router-link>
         </nav>
       </div>

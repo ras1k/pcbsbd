@@ -1,8 +1,8 @@
 <template>
-  <section id="whyus" class="bg-violet-200 py-20">
+  <section id="whyus" class="bg-violet-200 py-20 relative overflow-hidden">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl sm:text-5xl font-bold text-violet-800 text-center mb-12">
-        Why Choose PCBSBD?
+      <h2 class="text-4xl sm:text-5xl font-bold text-violet-800 text-center my-10">
+        Why Choose Building Solutions BD?
       </h2>
 
       <!-- Our Values Section -->
@@ -25,6 +25,7 @@
             <li>Innovative solutions to meet every type of need, from gaming to workstations</li>
           </ul>
         </div>
+
         <div
           data-aos="fade-up"
           data-aos-delay="100"
@@ -92,25 +93,113 @@
         data-aos="zoom-in"
         data-aos-delay="200"
         data-aos-duration="1000"
-        class="text-center py-16 bg-gradient-to-r from-violet-700 to-violet-900 text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl"
+        class="relative text-center py-16 bg-gradient-to-r from-violet-700 to-violet-900 text-white rounded-2xl shadow-lg overflow-hidden"
       >
-        <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Ready to Build Your Perfect PC?</h3>
-        <p class="text-lg mb-8">Let PCBSBD help you create the best PC build for your needs. Get in touch with us today!</p>
-        <router-link to="/contact"
-          class="inline-block bg-white text-violet-700 py-3 px-8 rounded-full text-xl font-semibold transition duration-500 hover:bg-gray-100 hover:scale-110"
-        >
-          Contact Us Now
-        </router-link>
+        <!-- 🎇 Particles Canvas Only for This Section -->
+        <canvas id="particles" class="absolute inset-0 w-full h-full z-0"></canvas>
+
+        <!-- Content above particles -->
+        <div class="relative z-10">
+          <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Ready to Build Your Perfect PC?</h3>
+          <p class="text-lg mb-8">
+            Let PCBSBD help you create the best PC build for your needs. Get in touch with us today!
+          </p>
+          <router-link
+            to="/contact"
+            class="inline-block bg-white text-violet-700 py-3 px-8 rounded-full text-xl font-semibold transition duration-500 hover:bg-gray-100 hover:scale-110"
+          >
+            Contact Us Now
+          </router-link>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
-
 <script setup>
-// No script needed for now
-</script>
+import { onMounted } from 'vue';
 
-<style scoped>
-/* No custom CSS needed as Tailwind is enough */
-</style>
+onMounted(() => {
+  const canvas = document.getElementById('particles');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext('2d');
+
+  function resize() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  let particlesArray = [];
+
+  class Particle {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 2 + 1;
+      this.speedX = Math.random() * 0.5 - 0.25;
+      this.speedY = Math.random() * 0.5 - 0.25;
+    }
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      if (this.size > 0.2) this.size -= 0.02;
+
+      if (
+        this.x < 0 ||
+        this.x > canvas.width ||
+        this.y < 0 ||
+        this.y > canvas.height ||
+        this.size <= 0.2
+      ) {
+        this.reset();
+      }
+    }
+    reset() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 2 + 1;
+      this.speedX = Math.random() * 0.5 - 0.25;
+      this.speedY = Math.random() * 0.5 - 0.25;
+    }
+    draw() {
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  function init() {
+    particlesArray = [];
+    const numberOfParticles = (canvas.width * canvas.height) / 9000;
+    for (let i = 0; i < numberOfParticles; i++) {
+      particlesArray.push(new Particle());
+    }
+  }
+
+  function handleParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let i = 0; i < particlesArray.length; i++) {
+      particlesArray[i].update();
+      particlesArray[i].draw();
+    }
+  }
+
+  let animationFrameId;
+  function animate() {
+    handleParticles();
+    animationFrameId = requestAnimationFrame(animate);
+  }
+
+  init();
+  animate();
+
+  window.addEventListener('resize', () => {
+    resize();
+    init();
+  });
+});
+</script>
