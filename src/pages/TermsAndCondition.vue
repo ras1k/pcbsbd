@@ -3,16 +3,19 @@
     <div class="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 py-6 bg-gradient-to-r from-violet-50/70 to-white shadow-xl rounded-xl  pb-12">
       
       <!-- Header -->
-      <header class="text-center pb-8 border-b border-gray-200 mb-10" data-aos="fade-down" data-aos-delay="200">
-        <h1 class="text-4xl sm:text-4xl font-extrabold" :style="{ color: 'var(--primary-color)' }">
+      <header class="text-center pb-8 border-b border-gray-200 lg:mb-10 mb-4" data-aos="fade-down" data-aos-delay="200">
+        <h1 class="text-3xl lg:text-4xl font-extrabold" :style="{ color: 'var(--primary-color)' }">
           Terms and Conditions &amp; Privacy Policy
         </h1>
         <p class="text-gray-500 italic text-sm">Last Updated: November 2025</p>
       </header>
 
+      <div class="mb-6" data-aos="fade-up" data-aos-delay="200">
+        <img src="/src/assets/pc/cover.jpg" class=" h-1/2 rounded-lg flex items-center justify-center mx-auto" alt="">
+      </div>
       <!-- Terms and Conditions Section -->
       <section id="terms" class="mb-12" data-aos="fade-up" data-aos-delay="200">
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 border-b-2 pb-2" :style="{ borderColor: 'var(--secondary-color)' }">
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 border-b-2 pb-2 text-center" :style="{ borderColor: 'var(--secondary-color)' }">
           Terms and Conditions
         </h2>
         
@@ -89,7 +92,7 @@
 
       <!-- Privacy Policy Section -->
       <section id="privacy">
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 border-b-2 pb-2" :style="{ borderColor: 'var(--secondary-color)' }">
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center border-b-2 pb-2" :style="{ borderColor: 'var(--secondary-color)' }">
           Privacy Policy
         </h2>
         
@@ -189,7 +192,7 @@
       <hr class="my-10 border-t-2 border-gray-200" />
 
       <!-- Final Contact Section (Shared) -->
-      <section id="contact-us" class="text-center">
+      <!-- <section id="contact-us" class="text-center">
         <h3 class="text-2xl font-bold" :style="{ color: 'var(--primary-color)' }">Contact Us</h3>
         <p class="text-gray-600 mb-6">
           If you have any questions or concerns regarding these documents, please contact us at:
@@ -203,13 +206,16 @@
             📍 Dhaka, Bangladesh
           </p>
         </div>
-      </section>
+      </section> -->
+      <ContactCTA/>
 
     </div>
   </div>
 </template>
 
 <script setup>
+import ContactCTA from './ContactCTA.vue';
+
 // No reactive state or complex logic is needed for this static legal page.
 // The content is directly in the template.
 </script>

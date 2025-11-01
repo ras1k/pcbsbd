@@ -16,11 +16,15 @@
       
       <div class="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
         <!-- Logo -->
-        <div class="text-white font-bold text-2xl cursor-pointer flex flex-col">
-          <a @click="scrollToSection('home')">
+        <div class="text-white font-bold text-2xl flex items-center gap-2">
+          <img src="/src/assets/pc/cover-2.jpg" class="w-1/6 rounded-lg hidden lg:block" alt="">
+          <img src="/src/assets/pc/logo.jpg" class="w-1/6 rounded-lg lg:hidden" alt="">
+          <div class="flex flex-col">
+            <a @click="scrollToSection('home')">
             PCBS<span class="text-violet-400">BD</span>
           </a> 
           <span class="text-xs text-violet-400">PC Building Solutions <span class="text-white">BD</span></span>
+          </div>
         </div>
 
         <!-- Desktop Menu -->
@@ -28,10 +32,10 @@
           <li><router-link to="/" @click="scrollToSection('home')" class="hover:text-violet-300 transition cursor-pointer">Home</router-link></li>
           <li><router-link to="/about" class="hover:text-violet-300 transition cursor-pointer">About</router-link></li>
           <li><router-link to="/builds" @click="scrollToSection('builds')" class="hover:text-violet-300 transition cursor-pointer">Builds</router-link></li>
-          <li><router-link to="/whyUs" @click="scrollToSection('whyus')" class="hover:text-violet-300 transition cursor-pointer">Why Us</router-link></li>
-          <li><router-link to="/team" @click="scrollToSection('team')" class="hover:text-violet-300 transition cursor-pointer">Our Team</router-link></li>
+          <li><router-link to="/whyUs" @click="scrollToSection('whyus')" class="hover:text-violet-300 text-nowrap transition cursor-pointer">Why Us</router-link></li>
+          <li><router-link to="/team" @click="scrollToSection('team')" class="hover:text-violet-300 text-nowrap transition cursor-pointer">Our Team</router-link></li>
           <li><router-link to="/contact" @click="scrollToSection('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
-          <li><router-link to="/terms-and-conditions" @click="scrollToSection('terms-and-conditions')" class="hover:text-violet-300 transition cursor-pointer">Terms &amp; Conditions</router-link></li>
+          <li><router-link to="/terms-and-conditions" @click="scrollToSection('terms-and-conditions')" class="hover:text-violet-300 text-nowrap transition cursor-pointer">Terms &amp; Conditions</router-link></li>
           <li><router-link to="/blogs" @click="scrollToSection('blogs')" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
         </ul>
 
