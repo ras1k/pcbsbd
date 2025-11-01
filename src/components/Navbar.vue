@@ -18,17 +18,17 @@
         <!-- Logo -->
         <div class="text-white font-bold text-2xl flex items-center gap-2">
           <img src="/src/assets/pc/cover-2.jpg" class="w-1/6 rounded-lg hidden lg:block" alt="">
-          <img src="/src/assets/pc/logo.jpg" class="w-1/6 rounded-lg lg:hidden" alt="">
+          <!-- <img src="/src/assets/pc/logo.jpg" class="w-1/6 rounded-lg lg:hidden" alt=""> -->
           <div class="flex flex-col">
             <a @click="scrollToSection('home')">
             PCBS<span class="text-violet-400">BD</span>
           </a> 
-          <span class="text-xs text-violet-400">PC Building Solutions <span class="text-white">BD</span></span>
+          <span class="text-xs text-violet-400 md:hidden lg:block">PC Building Solutions <span class="text-white">BD</span></span>
           </div>
         </div>
 
         <!-- Desktop Menu -->
-        <ul class="hidden md:flex items-center space-x-8 text-white font-medium">
+        <ul class="hidden md:flex items-center lg:space-x-8 md:space-x-4 text-white font-medium">
           <li><router-link to="/" @click="scrollToSection('home')" class="hover:text-violet-300 transition cursor-pointer">Home</router-link></li>
           <li><router-link to="/about" class="hover:text-violet-300 transition cursor-pointer">About</router-link></li>
           <li><router-link to="/builds" @click="scrollToSection('builds')" class="hover:text-violet-300 transition cursor-pointer">Builds</router-link></li>
@@ -43,10 +43,10 @@
         <div class="md:hidden flex items-center">
           <button @click="toggleMenu" class="text-white focus:outline-none">
             <template v-if="isOpen">
-              <XIcon class="w-8 h-8" />
+              <XIcon class="w-10 h-10" />
             </template>
             <template v-else>
-              <MenuIcon class="w-8 h-8" />
+              <MenuIcon class="w-10 h-10" />
             </template>
           </button>
         </div>
