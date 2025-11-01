@@ -30,9 +30,10 @@
         </div>
       </div>
 
-      <!-- Unique Offerings Section -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+
+      <div id="our-team" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="bg-white relative p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+           <canvas class="absolute inset-0 w-full h-full z-0"></canvas> 
           <div class="text-violet-700 text-5xl mb-6 transition-transform duration-500 hover:rotate-12">
             <i class="fas fa-cogs"></i>
           </div>
@@ -42,7 +43,8 @@
           </p>
         </div>
 
-        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+        <div class="bg-white relative p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+           <canvas class="absolute inset-0 w-full h-full z-0"></canvas> 
           <div class="text-violet-700 text-5xl mb-6 transition-transform duration-500 hover:rotate-12">
             <i class="fas fa-shield-alt"></i>
           </div>
@@ -52,7 +54,8 @@
           </p>
         </div>
 
-        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+        <div class="bg-white relative p-8 rounded-2xl shadow-lg border border-gray-200 transform transition duration-500 hover:scale-105 hover:shadow-2xl text-center">
+           <canvas class="absolute inset-0 w-full h-full z-0"></canvas> <!-- Card particles + lines -->
           <div class="text-violet-700 text-5xl mb-6 transition-transform duration-500 hover:rotate-12">
             <i class="fas fa-headset"></i>
           </div>
@@ -82,7 +85,98 @@
 </template>
 
 <script setup>
-// No script needed for now
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  const cards = document.querySelectorAll('#our-team canvas')
+
+  cards.forEach((canvas) => {
+    const ctx = canvas.getContext('2d')
+    let particles = []
+
+    let lineOffset = 0 // For animated diagonal lines
+    let isHovered = false
+
+    const resize = () => {
+      canvas.width = canvas.offsetWidth
+      canvas.height = canvas.offsetHeight
+    }
+    window.addEventListener('resize', resize)
+    resize()
+
+    // Track hover to animate lines
+    canvas.parentElement.addEventListener('mouseenter', () => isHovered = true)
+    canvas.parentElement.addEventListener('mouseleave', () => isHovered = false)
+
+    // Create diagonal line positions
+    const lineSpacing = 25
+    const diagonalLines = []
+    for (let x = -canvas.height; x < canvas.width + canvas.height; x += lineSpacing) {
+      diagonalLines.push({ x, y: 0 })
+    }
+
+    // Create particles
+    const count = 25
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 1.5 + 0.5,
+        dx: (Math.random() - 0.5) * 0.3,
+        dy: (Math.random() - 0.5) * 0.3,
+      })
+    }
+
+    const animate = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+      // Animate diagonal lines if hovered
+      if (isHovered) lineOffset += 0.5
+      else lineOffset *= 0.95 // slowly slow down when not hovered
+
+      // Draw diagonal tech lines
+      ctx.strokeStyle = 'rgba(128, 90, 250, 0.05)'
+      ctx.lineWidth = 1
+      diagonalLines.forEach((line) => {
+        ctx.beginPath()
+        ctx.moveTo(line.x + lineOffset, line.y)
+        ctx.lineTo(line.x + lineOffset + canvas.height, canvas.height)
+        ctx.stroke()
+      })
+
+      // Draw particles
+      particles.forEach((p) => {
+        ctx.beginPath()
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2)
+        ctx.fillStyle = 'rgba(128, 90, 250, 0.6)'
+        ctx.fill()
+
+        // Connect nearby particles
+        for (let j = 0; j < particles.length; j++) {
+          const p2 = particles[j]
+          const dist = Math.hypot(p.x - p2.x, p.y - p2.y)
+          if (dist < 40) {
+            ctx.beginPath()
+            ctx.strokeStyle = `rgba(128, 90, 250, ${1 - dist / 40})`
+            ctx.lineWidth = 0.5
+            ctx.moveTo(p.x, p.y)
+            ctx.lineTo(p2.x, p2.y)
+            ctx.stroke()
+          }
+        }
+
+        // Update particle position
+        p.x += p.dx
+        p.y += p.dy
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1
+      })
+
+      requestAnimationFrame(animate)
+    }
+    animate()
+  })
+})
 </script>
 
 <style scoped>

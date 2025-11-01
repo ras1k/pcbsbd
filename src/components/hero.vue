@@ -82,7 +82,7 @@
         </div>
 
         <div class="flex justify-center animate-fade-in" style="animation-delay: 0.3s;">
-          <img src="/src/assets/pc/pc-7.jpg" alt="Custom Gaming PC with RGB lighting" class="w-full max-w-sm rounded-2xl shadow-xl">
+          <img src="/src/assets/pc/pc-11.png" alt="Custom Gaming PC with RGB lighting" class="w-full max-w-sm rounded-2xl shadow-xl">
         </div>
 
         <div class="space-y-8">

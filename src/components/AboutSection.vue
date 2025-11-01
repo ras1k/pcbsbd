@@ -5,7 +5,7 @@
         About PC Building Solutions BD
       </h2>
       <p class="mt-6 text-lg sm:text-xl text-gray-700 max-w-5xl mx-auto">
-         At <span class="font-bold text-violet-700">Building Solutions BD</span>, we don't just build computers - we create personalized solutions that empower your digital life. 
+         At <span class="font-bold text-violet-700">PC Building Solutions BD</span>, we don't just build computers - we create personalized solutions that empower your digital life. 
             Our team of passionate technologists combines cutting-edge components with meticulous craftsmanship to deliver 
             performance that exceeds expectations.
       </p>

@@ -76,7 +76,7 @@
 
           <div class="mb-4">
             <h4 class="text-lg font-semibold text-violet-700">Phone</h4>
-            <p class="text-gray-700">+880 123 456 7890</p>
+            <p class="text-gray-700">+880 1700948410</p>
           </div>
 
           <div class="mb-4">

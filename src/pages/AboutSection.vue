@@ -12,7 +12,7 @@
         </h3>
         <div class="max-w-5xl mx-auto">
           <p class="text-lg sm:text-xl text-gray-700 leading-relaxed">
-            At <span class="font-bold text-violet-700">Building Solutions BD</span>, we don't just build computers - we create personalized solutions that empower your digital life. 
+            At <span class="font-bold text-violet-700">PC Building Solutions BD</span>, we don't just build computers - we create personalized solutions that empower your digital life. 
             Our team of passionate technologists combines cutting-edge components with meticulous craftsmanship to deliver 
             performance that exceeds expectations.
           </p>
@@ -20,10 +20,11 @@
       </div>
 
       <!-- Features Grid -->
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div id="our-team" class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
         <div class="group relative bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-violet-500 hover:border-violet-600 overflow-hidden"
           data-aos="fade-up" data-aos-delay="100">
+          <canvas class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
           <div class="absolute top-0 right-0 w-16 h-16 bg-violet-50 rounded-bl-2xl flex items-center justify-center transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-violet-600 opacity-80 group-hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -52,6 +53,7 @@
         <!-- Card 2 -->
         <div class="group relative bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-violet-500 hover:border-violet-600 overflow-hidden"
           data-aos="fade-up" data-aos-delay="200">
+          <canvas class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
           <div class="absolute top-0 right-0 w-16 h-16 bg-violet-50 rounded-bl-2xl flex items-center justify-center transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-violet-600 opacity-80 group-hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -80,6 +82,7 @@
         <!-- Card 3 -->
         <div class="group relative bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-violet-500 hover:border-violet-600 overflow-hidden"
           data-aos="fade-up" data-aos-delay="300">
+          <canvas class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
           <div class="absolute top-0 right-0 w-16 h-16 bg-violet-50 rounded-bl-2xl flex items-center justify-center transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-violet-600 opacity-80 group-hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -108,6 +111,7 @@
         <!-- Card 4 -->
         <div class="group relative bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-violet-500 hover:border-violet-600 overflow-hidden"
           data-aos="fade-up" data-aos-delay="400">
+          <canvas class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
           <div class="absolute top-0 right-0 w-16 h-16 bg-violet-50 rounded-bl-2xl flex items-center justify-center transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-violet-600 opacity-80 group-hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -136,6 +140,7 @@
         <!-- Card 5 -->
         <div class="group relative bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-violet-500 hover:border-violet-600 overflow-hidden"
           data-aos="fade-up" data-aos-delay="500">
+          <canvas class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
           <div class="absolute top-0 right-0 w-16 h-16 bg-violet-50 rounded-bl-2xl flex items-center justify-center transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-violet-600 opacity-80 group-hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -164,6 +169,7 @@
         <!-- Card 6 -->
         <div class="group relative bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-violet-500 hover:border-violet-600 overflow-hidden"
           data-aos="fade-up" data-aos-delay="600">
+          <canvas class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
           <div class="absolute top-0 right-0 w-16 h-16 bg-violet-50 rounded-bl-2xl flex items-center justify-center transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-violet-600 opacity-80 group-hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -312,4 +318,95 @@ onMounted(() => {
   };
   animate();
 });
+
+onMounted(() => {
+  const cards = document.querySelectorAll('#our-team canvas')
+
+  cards.forEach((canvas) => {
+    const ctx = canvas.getContext('2d')
+    let particles = []
+
+    let lineOffset = 0 // For animated diagonal lines
+    let isHovered = false
+
+    const resize = () => {
+      canvas.width = canvas.offsetWidth
+      canvas.height = canvas.offsetHeight
+    }
+    window.addEventListener('resize', resize)
+    resize()
+
+    // Track hover to animate lines
+    canvas.parentElement.addEventListener('mouseenter', () => isHovered = true)
+    canvas.parentElement.addEventListener('mouseleave', () => isHovered = false)
+
+    // Create diagonal line positions
+    const lineSpacing = 25
+    const diagonalLines = []
+    for (let x = -canvas.height; x < canvas.width + canvas.height; x += lineSpacing) {
+      diagonalLines.push({ x, y: 0 })
+    }
+
+    // Create particles
+    const count = 25
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 1.5 + 0.5,
+        dx: (Math.random() - 0.5) * 0.3,
+        dy: (Math.random() - 0.5) * 0.3,
+      })
+    }
+
+    const animate = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+      // Animate diagonal lines if hovered
+      if (isHovered) lineOffset += 0.5
+      else lineOffset *= 0.95 // slowly slow down when not hovered
+
+      // Draw diagonal tech lines
+      ctx.strokeStyle = 'rgba(128, 90, 250, 0.05)'
+      ctx.lineWidth = 1
+      diagonalLines.forEach((line) => {
+        ctx.beginPath()
+        ctx.moveTo(line.x + lineOffset, line.y)
+        ctx.lineTo(line.x + lineOffset + canvas.height, canvas.height)
+        ctx.stroke()
+      })
+
+      // Draw particles
+      particles.forEach((p) => {
+        ctx.beginPath()
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2)
+        ctx.fillStyle = 'rgba(128, 90, 250, 0.6)'
+        ctx.fill()
+
+        // Connect nearby particles
+        for (let j = 0; j < particles.length; j++) {
+          const p2 = particles[j]
+          const dist = Math.hypot(p.x - p2.x, p.y - p2.y)
+          if (dist < 40) {
+            ctx.beginPath()
+            ctx.strokeStyle = `rgba(128, 90, 250, ${1 - dist / 40})`
+            ctx.lineWidth = 0.5
+            ctx.moveTo(p.x, p.y)
+            ctx.lineTo(p2.x, p2.y)
+            ctx.stroke()
+          }
+        }
+
+        // Update particle position
+        p.x += p.dx
+        p.y += p.dy
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1
+      })
+
+      requestAnimationFrame(animate)
+    }
+    animate()
+  })
+})
 </script>
