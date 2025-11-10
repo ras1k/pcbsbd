@@ -77,7 +77,7 @@
           </div>
           <div class="mt-8">
             <p class="text-sm uppercase tracking-wider">Our Experience</p>
-            <p class="text-2xl font-bold">We've Completed <span class="italic">50+ Custom Builds</span></p>
+            <p class="text-2xl font-bold">We've Completed <span class="italic">25+ Custom Builds</span></p>
           </div>
         </div>
 
