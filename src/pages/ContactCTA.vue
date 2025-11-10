@@ -81,7 +81,7 @@
 
           <div class="mb-4">
             <h4 class="text-lg font-semibold text-violet-700">Email</h4>
-            <p class="text-gray-700">pcbsbd@gmail.com</p>
+            <p class="text-gray-700">Info@pcbsbd.com</p>
           </div>
           
           <div>
