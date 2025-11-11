@@ -37,7 +37,7 @@
         <div class="w-full lg:w-1/3 text-center lg:text-left">
           <h3 class="text-xl font-bold mb-2">Build Your Dream PC</h3>
           <p class="text-sm text-gray-300 mb-4">
-            Building PCs with passion and precision.
+            Your Vision. Our Build.
           </p>
  <div class="flex space-x-4 mt-2">
               <a href="https://www.facebook.com/share/1AKn8ZzVFq/" target="_blank" class="text-gray-300 hover:text-violet-300"><i class="fab fa-facebook"></i></a>
