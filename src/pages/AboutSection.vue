@@ -119,7 +119,7 @@
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-4">Lifetime Support</h3>
           <p class="text-gray-600 leading-relaxed mb-4">
-            Your relationship with us begins at purchase, not ends there. Enjoy free lifetime technical support.
+            Your relationship with us begins at purchase, not ends there. Enjoy free lifetime technical support online.
           </p>
           <ul class="space-y-3">
             <li class="flex items-start">
@@ -155,13 +155,13 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 mr-3 text-violet-600 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span class="text-gray-700">Same-day shipping available</span>
+              <span class="text-gray-700">Early shipping available</span>
             </li>
             <li class="flex items-start">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 mr-3 text-violet-600 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span class="text-gray-700">Real-time build tracking</span>
+              <span class="text-gray-700">Quick updates</span>
             </li>
           </ul>
         </div>
@@ -177,7 +177,7 @@
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-4">Community Trust</h3>
           <p class="text-gray-600 leading-relaxed mb-4">
-            Join thousands of satisfied customers who've made PCBSBD their go-to for all computing needs.
+            Join with our satisfied customers who've made PCBSBD their go-to for all computing needs.
           </p>
           <ul class="space-y-3">
             <li class="flex items-start">
@@ -190,7 +190,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 mr-3 text-violet-600 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              <span class="text-gray-700">Referral rewards program</span>
+              <span class="text-gray-700">Referral rewards</span>
             </li>
           </ul>
         </div>

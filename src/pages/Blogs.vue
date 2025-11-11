@@ -134,7 +134,7 @@ const blogs = ref([
       <ol>
         <li><strong>Mismatch:</strong> Pairing a high-end GPU with a low-watt PSU.</li>
         <li><strong>Clearance issues:</strong> Not checking GPU/cooler size vs. your case.</li>
-        <li><strong>VRMs:</strong> Ignoring motherboard quality for Ryzen CPUs.</li>
+        <li><strong>VRMs:</strong> Ignoring motherboard quality for CPUs.</li>
         <li><strong>Overpaying:</strong> Spending on RGB over raw performance.</li>
         <li><strong>Cheap case:</strong> Bad airflow = overheating components.</li>
       </ol>

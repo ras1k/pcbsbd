@@ -108,7 +108,7 @@
         <h3 class="text-2xl font-semibold text-violet-800 text-center mb-6">Find Us on the Map</h3>
         <div class="relative w-full h-72 rounded-lg">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.358555739711!2d90.3485717154078!3d23.810313684556085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c78caceb56ab%3A0xd2bb9d1e072849cf!2sDhaka!5e0!3m2!1sen!2sbd!4v1685041615223!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14601.662570999282!2d90.37384540000001!3d23.8038146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d35cc33b3d%3A0xf407ee8433836340!2sMirpur-10%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1762881521829!5m2!1sen!2sbd"
             class="absolute top-0 left-0 w-full h-full rounded-lg border-0"
             loading="lazy"
           ></iframe>
