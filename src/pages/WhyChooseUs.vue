@@ -93,7 +93,7 @@
         data-aos="zoom-in"
         data-aos-delay="200"
         data-aos-duration="1000"
-        class="relative text-center py-16 bg-gradient-to-r from-violet-700 to-violet-900 text-white rounded-2xl shadow-lg overflow-hidden"
+        class="relative text-center py-16 px-4 bg-gradient-to-r from-violet-700 to-violet-900 text-white rounded-2xl shadow-lg overflow-hidden"
       >
         <!-- 🎇 Particles Canvas Only for This Section -->
         <canvas id="particles" class="absolute inset-0 w-full h-full z-0"></canvas>
