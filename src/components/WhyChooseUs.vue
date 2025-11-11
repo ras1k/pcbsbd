@@ -2,7 +2,7 @@
   <section id="whyus" class="bg-violet-200 py-20">
     <div class="container mx-auto px-4">
       <h2 class="text-4xl sm:text-5xl font-bold text-violet-800 text-center mb-12">
-        Why Choose PC Building Solutions BD?
+        Why Choose PC Building Solutions?
       </h2>
 
       <!-- Our Values Section -->
@@ -68,7 +68,7 @@
 
       <!-- Call to Action Section -->
       <div class="parallax relative flex items-center justify-center">
-        <div class="text-center py-16 bg-black to-violet-900 bg-opacity-50 w-[85%] text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl">
+        <div class="text-center py-16 px-4 bg-black to-violet-900 bg-opacity-50 w-[85%] text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl">
         <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Ready to Build Your Perfect PC?</h3>
         <p class="text-lg mb-8 px-2">Let PCBSBD help you create the best PC build for your needs. Get in touch with us today!</p>
         <router-link 
