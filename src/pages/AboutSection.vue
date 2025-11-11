@@ -5,14 +5,14 @@
       <div class="text-center mb-16 lg:mb-20" data-aos="fade-down" data-aos-delay="100">
         
         <h2 class="text-4xl sm:text-5xl font-extrabold text-violet-900 mb-4 leading-tight">
-          About <span class="text-violet-600">PC Building Solutions BD</span>
+          About <span class="text-violet-600">PC Building Solutions</span>
         </h2>
         <h3 class="text-2xl sm:text-3xl font-semibold text-violet-700 mb-6">
           Crafting Exceptional Computing Experiences
         </h3>
         <div class="max-w-5xl mx-auto">
           <p class="text-lg sm:text-xl text-gray-700 leading-relaxed">
-            At <span class="font-bold text-violet-700">PC Building Solutions BD</span>, we don't just build computers - we create personalized solutions that empower your digital life. 
+            At <span class="font-bold text-violet-700">PC Building Solutions</span>, we don't just build computers - we create personalized solutions that empower your digital life. 
             Our team of passionate technologists combines cutting-edge components with meticulous craftsmanship to deliver 
             performance that exceeds expectations.
           </p>

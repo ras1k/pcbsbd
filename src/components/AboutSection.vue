@@ -2,10 +2,10 @@
   <section id="about"  class="bg-violet-50 py-20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-4xl sm:text-5xl font-extrabold text-violet-800">
-        About PC Building Solutions BD
+        About PC Building Solutions
       </h2>
       <p class="mt-6 text-lg sm:text-xl text-gray-700 max-w-5xl mx-auto">
-         At <span class="font-bold text-violet-700">PC Building Solutions BD</span>, we don't just build computers - we create personalized solutions that empower your digital life. 
+         At <span class="font-bold text-violet-700">PC Building Solutions</span>, we don't just build computers - we create personalized solutions that empower your digital life. 
             Our team of passionate technologists combines cutting-edge components with meticulous craftsmanship to deliver 
             performance that exceeds expectations.
       </p>

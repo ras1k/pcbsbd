@@ -64,19 +64,19 @@ const builds = ref([
     title: "Gaming Beast",
     description: "High-performance gaming PC built to handle the latest AAA games at ultra settings.",
     image: img1,
-    tags: ["RTX 4080", "i9-13900K", "32GB DDR5"]
+    tags: ["RTX 5080", "i9-13900K", "32GB DDR5"]
   },
   {
     title: "Workstation Pro",
     description: "A powerful workstation for content creation, 3D modeling, and rendering.",
     image: img2,
-    tags: ["RTX 4090", "Ryzen 9 7950X", "64GB DDR5"]
+    tags: ["RTX 5090", "Ryzen 9 7950X", "64GB DDR5"]
   },
   {
     title: "Budget Champion",
     description: "Affordable and reliable build for everyday tasks, web browsing, and light gaming.",
     image: img3,
-    tags: ["RTX 3060", "Ryzen 5 5600", "16GB DDR4"]
+    tags: ["RTX 5060", "Ryzen 5 5600", "16GB DDR4"]
   },
   {
     title: "Streamer Setup",
