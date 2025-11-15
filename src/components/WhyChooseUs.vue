@@ -10,7 +10,7 @@
         <div class="space-y-6">
           <h3 class="text-3xl font-semibold text-violet-700">Our Values</h3>
           <p class="text-gray-700 text-lg">
-            At PCBSBD, we’re committed to providing high-quality PC builds and solutions that are 
+            At PC Building Solutions, we&apos;re committed to providing high-quality PC builds and solutions that are 
             tailor-made to meet your needs. Our mission is to offer customers:
           </p>
 
@@ -39,7 +39,7 @@
           </div>
           <h4 class="text-2xl font-semibold text-violet-800 mb-4">Custom PC Builds</h4>
           <p class="text-gray-700">
-            We offer tailored PC builds that perfectly fit your needs, whether it’s for gaming, content creation, or business.
+            We offer tailored PC builds that perfectly fit your needs, whether it&apos;s for gaming, content creation, or business.
           </p>
         </div>
 
@@ -70,7 +70,7 @@
       <div class="parallax relative flex items-center justify-center">
         <div class="text-center py-16 px-4 bg-black to-violet-900 bg-opacity-50 w-[85%] text-white rounded-2xl shadow-lg transform transition duration-500 hover:shadow-2xl">
         <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Ready to Build Your Perfect PC?</h3>
-        <p class="text-lg mb-8 px-2">Let PCBSBD help you create the best PC build for your needs. Get in touch with us today!</p>
+        <p class="text-lg mb-8 px-2">Let PC Building Solutions help you create the best PC build for your needs. Get in touch with us today!</p>
         <router-link 
           to="/contact" 
           href="#contact" 

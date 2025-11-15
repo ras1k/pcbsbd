@@ -59,7 +59,7 @@ import img3 from '@/assets/pc/pc-3.jpg';
 const builds = ref([
   {
     title: "Gaming Beast",
-    description: "High-performance gaming PC built to handle the latest AAA games at ultra settings.",
+    description: "High-performance gaming PC built to handle the latest AAA games (high-end) at ultra settings.",
     image: img1,
     tags: ["RTX 5080", "i9-13900K", "32GB DDR5"]
   },
