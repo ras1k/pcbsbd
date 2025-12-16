@@ -82,7 +82,7 @@
             />
           </div>
           <div class="p-6 relative z-10">
-            <h3 class="text-2xl font-bold text-violet-900 mb-2">Benzir Matubbar</h3>
+            <h3 class="text-2xl font-bold text-violet-900 mb-2">Sucheen Dewan</h3>
             <p class="text-violet-700 font-semibold">Graphics Designer</p>
             <p class="text-gray-600 mt-2">
               Crafting visuals that elevate our brand and communicate our values beautifully.
