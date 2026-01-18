@@ -20,11 +20,12 @@
           class="h-14 sm:h-20 object-contain rounded-lg shadow-lg mx-auto md:mx-0"
         />
         <nav
-          class="flex flex-wrap justify-center md:justify-end space-x-4 text-sm sm:text-base font-semibold"
+          class="flex justify-center md:justify-end space-x-4 text-sm sm:text-base font-semibold"
         >
-        <router-link to="/team" class="hover:text-violet-400 transition">Our Team</router-link>
+        <router-link to="/team" class="hover:text-violet-400 transition text-nowrap">Our Team</router-link>
         <router-link to="/contact" class="hover:text-violet-400 transition">Contact</router-link>
           <router-link to="/terms-and-conditions" class="hover:text-violet-400 transition">T&amp;C</router-link>
+          <router-link to="/Reviews" class="hover:text-violet-400 transition">Reviews</router-link>
           <router-link to="/blogs" class="hover:text-violet-400 transition">Blogs</router-link>
         </nav>
       </div>
@@ -39,7 +40,7 @@
           <p class="text-sm text-gray-300 mb-4">
             Your Vision. Our Build.
           </p>
- <div class="flex space-x-4 mt-2">
+ <div class="flex items-center justify-center lg:justify-start md:justify-start space-x-4 mt-2">
               <a href="https://www.facebook.com/share/1AKn8ZzVFq/" target="_blank" class="text-gray-300 hover:text-violet-300"><i class="fab fa-facebook"></i></a>
               <a href="https://x.com/PCBSBD" target="_blank" class="text-gray-300 hover:text-violet-300"><i class="fab fa-twitter"></i></a>
               <a href="https://www.instagram.com/pcbsbd?igsh=amV4enRsNXRudGYw" target="_blank" class="text-gray-300 hover:text-violet-300"><i class="fab fa-instagram"></i></a>

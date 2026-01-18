@@ -36,6 +36,7 @@
           <li><router-link to="/team" @click="scrollToSection('team')" class="hover:text-violet-300 text-nowrap transition cursor-pointer">Our Team</router-link></li>
           <li><router-link to="/contact" @click="scrollToSection('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
           <li><router-link to="/terms-and-conditions" @click="scrollToSection('terms-and-conditions')" class="hover:text-violet-300 text-nowrap transition cursor-pointer">Terms &amp; Conditions</router-link></li>
+          <li><router-link to="/Reviews" @click="scrollToSection('reviews')" class="hover:text-violet-300 text-nowrap transition cursor-pointer">Reviews</router-link></li>
           <li><router-link to="/blogs" @click="scrollToSection('blogs')" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
         </ul>
 
@@ -70,6 +71,7 @@
             <li><router-link to="/team" @click="navigateAndClose('team')" class="hover:text-violet-300 transition cursor-pointer">Our Team</router-link></li>
             <li><router-link to="/contact" @click="navigateAndClose('contact')" class="hover:text-violet-300 transition cursor-pointer">Contact</router-link></li>
             <li><router-link to="/terms-and-conditions" @click="navigateAndClose('terms-and-conditions')" class="hover:text-violet-300 transition cursor-pointer">Terms &amp; Conditions</router-link></li>
+             <li><router-link to="/Reviews" @click="scrollToSection('reviews')" class="hover:text-violet-300 text-nowrap transition cursor-pointer">Reviews</router-link></li>
             <li><router-link to="/blogs" @click="navigateAndClose('blogs')" class="hover:text-violet-300 transition cursor-pointer">Blogs</router-link></li>
           </ul>
         </div>
