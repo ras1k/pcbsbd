@@ -10,6 +10,7 @@ import OurTeam from "../pages/OurTeam.vue";
 import Blogs from "../pages/Blogs.vue";
 import ReceiptGenerator from '/src/pages/ReceiptGenerator.vue'
 import TermsAndCondition from '/src/pages/TermsAndCondition.vue'
+import Reviews from '/src/pages/Reviews.vue'
 
 const routes=[
     
@@ -58,6 +59,11 @@ const routes=[
         path:'/terms-and-conditions',
         name:'terms-and-conditions',
         component: TermsAndCondition,
+    },
+    {
+        path:'/reviews',
+        name:'reviews',
+        component: Reviews,
     },
     
     
