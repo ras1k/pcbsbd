@@ -10,6 +10,9 @@
     <!-- Featured Builds Section -->
     <FeaturedBuilds />
 
+    <!-- Reviews Slider -->
+    <ReviewsSlider />
+
     <!-- Why Choose Us Section -->
     <WhyChooseUs />
 
@@ -25,4 +28,5 @@ import AboutSection from '/src/components/AboutSection.vue'
 import FeaturedBuilds from '/src/components/FeaturedBuilds.vue'
 import WhyChooseUs from '/src/components/WhyChooseUs.vue'
 import ContactCTA from '/src/components/ContactCTA.vue'
+import ReviewsSlider from '../components/ReviewsSlider.vue'
 </script>
