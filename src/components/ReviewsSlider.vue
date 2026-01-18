@@ -60,35 +60,36 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-
+import img1 from "/src/assets/images/people.jpg";
+import img2 from "/src/assets/images/female-2.jpg";
 const reviews = [
   {
     name: 'Ishmam Zaman Arno',
     role: 'Student',
     comment:
       'They are honestly the best service out there. Very nice to talk with and very picky.',
-    image: '/src/assets/images/people.jpg',
+    image: img1,
   },
   {
     name: 'Dewan Nafiul Islam Noor',
     role: 'Job Holder',
     comment:
       'High-end PC build with professional guidance. Totally worth it.',
-    image: '/src/assets/images/people.jpg',
+    image: img1,
   },
   {
     name: 'Wasif A Khoda',
     role: 'Student',
     comment:
       'Friendly service and excellent laptop recommendation.',
-    image: '/src/assets/images/people.jpg',
+    image: img1,
   },
   {
     name: 'তাহাসিনা মিম সোমা',
     role: 'Student',
     comment:
       'After weeks of research I finally found my dream laptop. Highly recommended!',
-    image: '/src/assets/images/people.jpg',
+    image: img2,
   },
 ]
 

@@ -173,7 +173,8 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-
+import img1 from "/src/assets/images/people.jpg";
+import img2 from "/src/assets/images/female-2.jpg";
 const recommendPercent = ref(0);
 
 const reviews = [
@@ -183,7 +184,7 @@ const reviews = [
     rating: 5,
     comment:
       "They are honestly the best service out there. Very nice to talk with and very picky. It was a delightful experience",
-    image: "/src/assets/images/people.jpg",
+    image: img1,
   },
   {
     name: "Dewan Nafiul Islam Noor",
@@ -191,7 +192,7 @@ const reviews = [
     rating: 5,
     comment:
       "After completing my BSc, I needed a solid high end PC build to handle heavy tasks. One of my juniors recommended their PC consultation and build service and honestly, it was a great decision. What impressed me first was how they provided two separate build options based on budget: one for mid/low budget and another high end configuration that’s future proof. I went with the high end build. Throughout the process, they were friendly, professional, and transparent. Every component was discussed in detail, and they made sure I understood why one option might be better than another. One challenge I faced was the market supply a few components (like the RM850x PSU) were unavailable at that time. But they helped me find proper upgrade/alternative options without compromising on quality which shows real expertise and care. Overall, the experience was super satisfying. If your’e planning to build a future proof or customized PC, Id  efinitely recommend this service. Honest suggestions, dedicated support, and a smooth, stress-free experience couldn’t ask for more!",
-    image: "/src/assets/images/people.jpg",
+    image: img1,
   },
   {
     name: "Wasif A Khoda",
@@ -199,7 +200,7 @@ const reviews = [
     rating: 5,
     comment:
       "Their service is good and they are friendly. They helped me to choose laptop",
-    image: "/src/assets/images/people.jpg",
+    image: img1,
   },
   {
     name: "Nasmus Sadat Chowdhury",
@@ -207,7 +208,7 @@ const reviews = [
     rating: 5,
     comment:
       "I recently got a laptop based on a recommendation from one of your team member and The suggestion was spot on, considering my needs and budget. The laptop performs excellently, and I truly appreciate the guidance and expertise provided. If your’e looking for reliable recommendations and great service, I highly recommend checking out this page. Thanks again for your help!",
-    image: "/src/assets/images/people.jpg",
+    image: img1,
   },
   {
     name: "তাহাসিনা মিম সোমা",
@@ -215,7 +216,7 @@ const reviews = [
     rating: 5,
     comment:
       "After weeks of research and comparisons, I finally found the one. Thanks to PC Building Solutions for helping me find my dream laptop. It’s sleek, fast, and reliable, with great battery life and a stunning display—perfect for work, creativity, and entertainment. Absolutely worth it! Once again, thank you, PC Building Solutions, for helping me find my dream laptop",
-    image: "/src/assets/images/female-2.jpg",
+    image: img2,
   },
   {
     name: "Shaswata Barua",
@@ -223,7 +224,7 @@ const reviews = [
     rating: 5,
     comment:
       "This page is super helpful for finding good laptop,pc components at good affordable prices. The recommendations are clear, and it’s easy to compare options. Great for anyone looking for a good deal and everything is for free!!",
-    image: "/src/assets/images/people.jpg",
+    image: img1,
   },
 ];
 
