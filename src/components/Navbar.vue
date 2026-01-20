@@ -81,7 +81,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { Menu as MenuIcon, X as XIcon } from 'lucide-vue-next'
 import { useRoute } from 'vue-router'
 
@@ -129,6 +129,13 @@ function scrollToSection(id) {
     element.scrollIntoView({ behavior: 'smooth' })
   }
 }
+
+watch(
+  () => route.fullPath,
+  () => {
+    isOpen.value = false
+  }
+)
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
